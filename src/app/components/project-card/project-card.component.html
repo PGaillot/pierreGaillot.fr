@@ -1,0 +1,17 @@
+<mat-card class="project-card">
+  <mat-card-header>
+    <div mat-card-avatar class="project-header-image"></div>
+    <mat-card-title>{{ project.displayName }}</mat-card-title>
+    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image [src]="project.imgUrl" alt="Photo of a Shiba Inu" />
+  <mat-card-content>
+    <p class="project-description">
+      {{ project.description }}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>LIKE</button>
+    <button mat-button>SHARE</button>
+  </mat-card-actions>
+</mat-card>
