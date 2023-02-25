@@ -6,8 +6,12 @@
 <!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 
+<!-- The menu Tabs -->
 <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="center">
-  <mat-tab label="TabHeader1"></mat-tab>
-  <mat-tab label="TabTabHeader2"></mat-tab>
+  <mat-tab label="à propos"><app-about-me></app-about-me></mat-tab>
+  <mat-tab label="competences"><app-skills></app-skills></mat-tab>
+  <mat-tab label="projets"><app-projects></app-projects></mat-tab>
 </mat-tab-group>
+
+
 <router-outlet></router-outlet>
