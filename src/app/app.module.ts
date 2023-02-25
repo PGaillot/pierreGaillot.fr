@@ -8,6 +8,8 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 import { AboutMeComponent } from './pages/about-me/about-me.component';
 import { SkillsComponent } from './pages/skills/skills.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 // MatComponent
 import {MatButtonModule} from '@angular/material/button';
@@ -32,7 +34,7 @@ import {MatDividerModule} from '@angular/material/divider';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-
+    HttpClientModule,
     // MatComponents
     MatTabsModule,
     MatCardModule,

@@ -1,9 +1,12 @@
 <body>
-
-
   <h1>Mes compétances</h1>
   <p>
-    La page compétences de mon curriculum-vitae présente mes compétences professionnelles, mes réalisations et mes expériences. Elle met en avant mes connaissances techniques, mes compétences en communication et mes capacités à travailler en équipe. Elle met également en avant mes réalisations passées et les projets sur lesquels j'ai travaillé, ainsi que mes certifications et mes formations.
+    La page compétences de mon curriculum-vitae présente mes compétences
+    professionnelles, mes réalisations et mes expériences. Elle met en avant mes
+    connaissances techniques, mes compétences en communication et mes capacités
+    à travailler en équipe. Elle met également en avant mes réalisations passées
+    et les projets sur lesquels j'ai travaillé, ainsi que mes certifications et
+    mes formations.
   </p>
 
   <mat-divider></mat-divider>
@@ -13,7 +16,12 @@
       <img [src]="skill.iconUrl" [alt]="skill.displayName" />
       <mat-chip>{{ skill.categoty }}</mat-chip>
       <p class="description">{{ skill.description }}</p>
-      <button mat-button>en savoir plus</button>
+
+      <div  class="bg-footer" [ngStyle]="{'background-color':skill.color}">
+        <mat-card-actions>
+          <button mat-button>voir les projets</button>
+        </mat-card-actions>
+      </div>
     </div>
   </div>
 </body>
