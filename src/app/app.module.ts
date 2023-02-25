@@ -13,6 +13,10 @@ import { ProjectCardComponent } from './components/project-card/project-card.com
 import {MatButtonModule} from '@angular/material/button';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatCardModule} from '@angular/material/card';
+import {MatChipsModule} from '@angular/material/chips';
+import {MatDividerModule} from '@angular/material/divider';
+
+
 
 
 
@@ -33,6 +37,8 @@ import {MatCardModule} from '@angular/material/card';
     MatTabsModule,
     MatCardModule,
     MatButtonModule,
+    MatChipsModule,
+    MatDividerModule,
 
   ],
   providers: [],
