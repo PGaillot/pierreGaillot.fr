@@ -19,7 +19,6 @@ export class SkillsComponent {
 
   ngOnInit(){
     this.httpClient.get("assets/skills.json").subscribe(data =>{
-      console.log(data);
       const skillsData = data;
       this.skills = skillsData;
     })

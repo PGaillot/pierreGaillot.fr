@@ -1,12 +1,23 @@
 [
   {
+    "id":1,
     "displayName": "sur mesure",
     "description": "une application android et ios.",
-    "imgUrl": "https://this-person-does-not-exist.com/img/avatar-11ab00b25f22ad77edee40e6c9bdfdb3.jpg"
+    "imgUrl": "./assets/img/projects/sur-mesure-mockup.png",
+    "skillsId": [0,7]
   },
 
   {
+    "id":2,
     "displayName": "Sutom-Master",
+    "description": "une bot discord qui compte et fait des classements de mes colègues",
+    "imgUrl": "https://this-person-does-not-exist.com/img/avatar-11ab00b25f22ad77edee40e6c9bdfdb3.jpg",
+    "skillsId":[2]
+  },
+
+  {
+    "id":3,
+    "displayName": "Médiatio",
     "description": "une bot discord qui compte et fait des classements de mes colègues",
     "imgUrl": "https://this-person-does-not-exist.com/img/avatar-11ab00b25f22ad77edee40e6c9bdfdb3.jpg"
   }

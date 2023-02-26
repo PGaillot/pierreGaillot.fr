@@ -1,4 +1,5 @@
 export class Skill{
+    id!:number
     displayName!:string;
     iconUrl!:string;
     categoty!:string;

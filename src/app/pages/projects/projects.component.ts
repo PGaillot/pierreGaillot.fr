@@ -16,7 +16,6 @@ export class ProjectsComponent {
     
   ngOnInit(){
     this.httpClient.get("assets/projects.json").subscribe(data =>{
-      console.log(data);
       const projectsData = data;
       this.projects = projectsData;
     })
