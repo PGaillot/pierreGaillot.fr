@@ -1,0 +1,11 @@
+<body id="page">
+    <button mat-button routerLink="/projects"><mat-icon>arrow_back</mat-icon> retour aux projects</button>
+
+    <h1>{{project.displayName | uppercase}}</h1>
+    <mat-chip-listbox *ngIf="skills.length > 0">
+        <mat-chip *ngFor="let skill of skills">{{skill.displayName}}</mat-chip>
+    </mat-chip-listbox>
+    <p>{{project.description}}</p>
+
+    <button mat-button [disabled]="project.gitUrl === undefined" *ngIf="github" (click)="onGitClick()">voir le repo github</button>
+</body>

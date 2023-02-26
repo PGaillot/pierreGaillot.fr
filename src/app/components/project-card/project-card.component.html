@@ -33,6 +33,6 @@
       <!-- <mat-icon>home</mat-icon> -->
       <img [src]="gitSkill.iconUrl" alt="le lien vers le github du projet" />
     </button>
-    <button mat-button>voir le projet</button>
+    <button mat-button [routerLink]="'/project/' + project.id">voir le projet</button>
   </mat-card-actions>
 </mat-card>
