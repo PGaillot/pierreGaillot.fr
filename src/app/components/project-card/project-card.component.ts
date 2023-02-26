@@ -26,7 +26,7 @@ export class ProjectCardComponent {
         let sk = new Skill();
         sk.id = _skill.id;
         sk.displayName = _skill.displayName;
-        sk.categoty = _skill.categoty;
+        sk.category = _skill.category;
         sk.color = _skill.color;
         sk.description = _skill.description;
         sk.iconUrl = _skill.iconUrl;

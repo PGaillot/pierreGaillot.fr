@@ -2,7 +2,7 @@ export class Skill{
     id!:number
     displayName!:string;
     iconUrl!:string;
-    categoty!:string;
+    category!:string;
     level?:number;
     description?:string;
     color?:string;

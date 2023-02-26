@@ -1,11 +1,45 @@
 <body id="page">
-    <button mat-button routerLink="/projects"><mat-icon>arrow_back</mat-icon> retour aux projects</button>
+  <button mat-button routerLink="/projects">
+    <mat-icon>arrow_back</mat-icon> retour aux projects
+  </button>
 
-    <h1>{{project.displayName | uppercase}}</h1>
-    <mat-chip-listbox *ngIf="skills.length > 0">
-        <mat-chip *ngFor="let skill of skills">{{skill.displayName}}</mat-chip>
-    </mat-chip-listbox>
-    <p>{{project.description}}</p>
+  <img id="header-icon" *ngIf="project.iconUrl != undefined" [src]="project.iconUrl" alt="">
+  <h1>{{ project.displayName | uppercase }}</h1>
+  <p>{{ project.description }}</p>
 
-    <button mat-button [disabled]="project.gitUrl === undefined" *ngIf="github" (click)="onGitClick()">voir le repo github</button>
+  <div class="skills-category-cont" *ngIf="skillsCategory.length > 0">
+    <h2>Les compétances utilisé :</h2>
+    <mat-card *ngFor="let category of skillsCategory">
+      <mat-card-header>
+        <mat-card-title> {{ category | uppercase }}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content> 
+        <div *ngFor="let skill of getSkillByCategory(category)">
+            {{ skill.displayName }}
+          </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <div
+    class="project-screenshots-cont"
+    *ngIf="project.screenshots != undefined"
+  >
+    <h2>screenshots :</h2>
+    <img
+      id="screenshot"
+      *ngFor="let screenshot of project.screenshots"
+      [src]="screenshot"
+      alt=""
+    />
+  </div>
+
+  <button
+    mat-button
+    [disabled]="project.gitUrl === undefined"
+    *ngIf="github"
+    (click)="onGitClick()"
+  >
+    voir le repo github
+  </button>
 </body>

@@ -14,7 +14,7 @@
   <div class="skill-cont">
     <div class="skill" *ngFor="let skill of skills">
       <img [src]="skill.iconUrl" [alt]="skill.displayName" />
-      <mat-chip>{{ skill.categoty }}</mat-chip>
+      <mat-chip>{{ skill.category }}</mat-chip>
       <p class="description">{{ skill.description }}</p>
 
       <div  class="bg-footer" [ngStyle]="{'background-color':skill.color}">

@@ -13,6 +13,7 @@ export class ProjectComponent {
   skills: Skill[] = [];
   gitSkill: Skill = new Skill();
   github:boolean = false;
+  skillsCategory:string[] = [];
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -39,6 +40,8 @@ export class ProjectComponent {
           this.project.imgUrl = _project.imgUrl;
           this.project.skillsId = _project.skillsId;
           this.project.gitUrl = _project.gitUrl;
+          this.project.screenshots = _project.screenshots;
+          this.project.iconUrl = _project.iconUrl;
         }
       });
     });
@@ -54,7 +57,7 @@ export class ProjectComponent {
         let sk = new Skill();
         sk.id = _skill.id;
         sk.displayName = _skill.displayName;
-        sk.categoty = _skill.categoty;
+        sk.category = _skill.category;
         sk.color = _skill.color;
         sk.description = _skill.description;
         sk.iconUrl = _skill.iconUrl;
@@ -70,10 +73,29 @@ export class ProjectComponent {
           }
         });
       });
+      this.getSkillsCategory();
     });
   }
 
   onGitClick(){
     window.open(this.project.gitUrl, "_blank");
   }
+
+  getSkillsCategory(){
+    this.skills.forEach(skill => {
+      if(skill.category != undefined){
+        if(!this.skillsCategory.includes(skill.category))
+        this.skillsCategory.push(skill.category)
+      }
+    });
+  }
+
+  getSkillByCategory(category:string):Skill[]{
+    let categorySkills:Skill[] = []
+    this.skills.forEach(skill => {
+      if(skill.category === category) categorySkills.push(skill)
+    });
+    return categorySkills;
+  }
+
 }
