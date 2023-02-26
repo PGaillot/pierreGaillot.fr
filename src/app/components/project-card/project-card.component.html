@@ -1,10 +1,10 @@
 <mat-card class="project-card">
   <mat-card-header>
-    <div mat-card-avatar class="project-header-image"></div>
+    <div mat-card-avatar class="project-header-image" [ngStyle]="{'background-image' : 'url(' + project.iconUrl + ')'}"></div>
     <mat-card-title>{{ project.displayName }}</mat-card-title>
-    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+    <mat-card-subtitle>{{getMotivationFrench(project.motivation)}}</mat-card-subtitle>
   </mat-card-header>
-  <img mat-card-image [src]="project.imgUrl" alt="Photo of a Shiba Inu" />
+  <img mat-card-image [src]="project.imgUrl"/>
   <mat-card-content>
     <mat-chip-listbox
       class="skills-chips-list"
@@ -30,7 +30,6 @@
       *ngIf="github"
       (click)="onGitClick()"
     >
-      <!-- <mat-icon>home</mat-icon> -->
       <img [src]="gitSkill.iconUrl" alt="le lien vers le github du projet" />
     </button>
     <button mat-button [routerLink]="'/project/' + project.id">voir le projet</button>

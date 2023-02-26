@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, Input } from '@angular/core';
 import { Project } from 'src/app/models/project';
 import { Skill } from 'src/app/models/skill';
+import { MotivationType } from 'src/app/utils/motivationType';
 
 @Component({
   selector: 'app-project-card',
@@ -9,12 +10,12 @@ import { Skill } from 'src/app/models/skill';
   styleUrls: ['./project-card.component.scss'],
 })
 export class ProjectCardComponent {
-
   @Input() project!: Project;
   skills: Skill[] = [];
   projectSkills: Skill[] = [];
-  github:boolean = false;
-  gitSkill!:Skill;
+  github: boolean = false;
+  gitSkill!: Skill;
+  motivationType!: string;
 
   constructor(private httpClient: HttpClient) {}
 
@@ -32,7 +33,7 @@ export class ProjectCardComponent {
         sk.iconUrl = _skill.iconUrl;
         sk.level = _skill.level;
         this.skills.push(sk);
-        if(sk.displayName === "github") this.gitSkill = sk;
+        if (sk.displayName === 'github') this.gitSkill = sk;
       });
       this.getProjectSkills();
       this.checkIsGitProject();
@@ -40,7 +41,7 @@ export class ProjectCardComponent {
   }
 
   checkIsGitProject() {
-    if(this.projectSkills.includes(this.gitSkill)) this.github = true;
+    if (this.projectSkills.includes(this.gitSkill)) this.github = true;
   }
 
   getProjectSkills() {
@@ -59,7 +60,26 @@ export class ProjectCardComponent {
     });
   }
 
-  onGitClick(){
-    window.open(this.project.gitUrl, "_blank");
+  onGitClick() {
+    window.open(this.project.gitUrl, '_blank');
+  }
+
+  getMotivationFrench(motivation: string): string {
+    let mtv: string = '';
+    switch (motivation) {
+      case MotivationType.PERSONAL:
+        mtv = 'projet personnel';
+        break;
+      case MotivationType.PROFESSIONAL:
+        mtv = 'projet pro.';
+        break;
+      case MotivationType.FORMATION:
+        mtv = 'projet de formation';
+        break;
+      default:
+        mtv = 'autre motivation';
+        break;
+    }
+    return mtv;
   }
 }
