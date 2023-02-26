@@ -1,9 +1,10 @@
 <body id="page">
-  <button mat-button routerLink="/projects">
-    <mat-icon>arrow_back</mat-icon> retour aux projects
-  </button>
-
-  <img id="header-icon" *ngIf="project.iconUrl != undefined" [src]="project.iconUrl" alt="">
+  <img
+    id="header-icon"
+    *ngIf="project.iconUrl != undefined"
+    [src]="project.iconUrl"
+    alt=""
+  />
   <h1>{{ project.displayName | uppercase }}</h1>
   <p>{{ project.description }}</p>
 
@@ -13,10 +14,10 @@
       <mat-card-header>
         <mat-card-title> {{ category | uppercase }}</mat-card-title>
       </mat-card-header>
-      <mat-card-content> 
+      <mat-card-content>
         <div *ngFor="let skill of getSkillByCategory(category)">
-            {{ skill.displayName }}
-          </div>
+          {{ skill.displayName }}
+        </div>
       </mat-card-content>
     </mat-card>
   </div>
@@ -41,5 +42,8 @@
     (click)="onGitClick()"
   >
     voir le repo github
+  </button>
+  <button mat-button routerLink="/projects">
+    <mat-icon>arrow_back</mat-icon> retour aux projects
   </button>
 </body>
