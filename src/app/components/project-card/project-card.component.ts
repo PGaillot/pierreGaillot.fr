@@ -58,4 +58,8 @@ export class ProjectCardComponent {
       });
     });
   }
+
+  onGitClick(){
+    window.open(this.project.gitUrl, "_blank");
+  }
 }

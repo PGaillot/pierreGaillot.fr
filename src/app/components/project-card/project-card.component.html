@@ -28,6 +28,7 @@
       aria-label="Example icon button with a home icon"
       [disabled]="project.gitUrl === undefined"
       *ngIf="github"
+      (click)="onGitClick()"
     >
       <!-- <mat-icon>home</mat-icon> -->
       <img [src]="gitSkill.iconUrl" alt="le lien vers le github du projet" />
