@@ -6,9 +6,13 @@
   </mat-card-header>
   <img mat-card-image [src]="project.imgUrl" alt="Photo of a Shiba Inu" />
   <mat-card-content>
-
-    <mat-chip-listbox class="skills-chips-list" *ngIf="projectSkills.length > 0">
-      <mat-chip *ngFor="let skill of projectSkills">{{ skill.displayName }}</mat-chip>
+    <mat-chip-listbox
+      class="skills-chips-list"
+      *ngIf="projectSkills.length > 0"
+    >
+      <mat-chip *ngFor="let skill of projectSkills">{{
+        skill.displayName
+      }}</mat-chip>
     </mat-chip-listbox>
 
     <p class="project-description">
@@ -17,7 +21,17 @@
   </mat-card-content>
 
   <mat-card-actions>
-    <button mat-button>LIKE</button>
-    <button mat-button>SHARE</button>
+    <button
+      id="git-button"
+      mat-icon-button
+      color="primary"
+      aria-label="Example icon button with a home icon"
+      [disabled]="project.gitUrl === undefined"
+      *ngIf="github"
+    >
+      <!-- <mat-icon>home</mat-icon> -->
+      <img [src]="gitSkill.iconUrl" alt="le lien vers le github du projet" />
+    </button>
+    <button mat-button>voir le projet</button>
   </mat-card-actions>
 </mat-card>

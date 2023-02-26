@@ -9,9 +9,12 @@ import { Skill } from 'src/app/models/skill';
   styleUrls: ['./project-card.component.scss'],
 })
 export class ProjectCardComponent {
+
   @Input() project!: Project;
   skills: Skill[] = [];
   projectSkills: Skill[] = [];
+  github:boolean = false;
+  gitSkill!:Skill;
 
   constructor(private httpClient: HttpClient) {}
 
@@ -29,9 +32,15 @@ export class ProjectCardComponent {
         sk.iconUrl = _skill.iconUrl;
         sk.level = _skill.level;
         this.skills.push(sk);
+        if(sk.displayName === "github") this.gitSkill = sk;
       });
       this.getProjectSkills();
+      this.checkIsGitProject();
     });
+  }
+
+  checkIsGitProject() {
+    if(this.projectSkills.includes(this.gitSkill)) this.github = true;
   }
 
   getProjectSkills() {

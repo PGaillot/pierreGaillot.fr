@@ -17,6 +17,8 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatCardModule} from '@angular/material/card';
 import {MatChipsModule} from '@angular/material/chips';
 import {MatDividerModule} from '@angular/material/divider';
+import {MatIconModule} from '@angular/material/icon';
+
 
 
 
@@ -41,6 +43,7 @@ import {MatDividerModule} from '@angular/material/divider';
     MatButtonModule,
     MatChipsModule,
     MatDividerModule,
+    MatIconModule,
 
   ],
   providers: [],

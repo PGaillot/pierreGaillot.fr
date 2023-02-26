@@ -15,3 +15,9 @@
   .skills-chips-list{
     padding-top: 1em;
   }
+
+  #git-button:disabled{
+    img{
+     opacity: 0.3;
+    }
+  }
