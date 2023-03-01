@@ -5,7 +5,7 @@
     <mat-card-title>{{ project.displayName }}</mat-card-title>
     <mat-card-subtitle>{{getMotivationFrench(project.motivation)}}</mat-card-subtitle>
   </mat-card-header>
-  <img mat-card-image [src]="project.imgUrl"/>
+  <img class="project-image" mat-card-image [src]="project.imgUrl"/>
   <mat-card-content>
     <mat-chip-listbox
       class="skills-chips-list"

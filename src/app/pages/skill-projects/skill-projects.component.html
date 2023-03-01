@@ -1,10 +1,23 @@
 <body id="page">
+  <h1>{{ skill.displayName }}</h1>
+  <p>{{ skill.description }}</p>
+  <mat-divider></mat-divider>
 
-    <h1> {{ skill.displayName }}</h1>
-    <p>{{ skill.description}}</p>
-    <mat-divider></mat-divider>
-    <div>
-        <app-project-card *ngFor="let project of projects" [project]="project"></app-project-card>
-    </div>
-
+  <div>
+    <ng-container *ngIf="projects.length > 0; else noProject">
+      <h2>
+        Voici une liste de projets que j'ai réalisé avec
+        {{ skill.displayName | titlecase }}
+      </h2>
+      <div class="projects-cont">
+        <app-project-card
+          *ngFor="let project of projects"
+          [project]="project"
+        ></app-project-card>
+      </div>
+    </ng-container>
+    <ng-template #noProject>
+      <h2>Aucun project lié à cette competance.</h2>
+    </ng-template>
+  </div>
 </body>
