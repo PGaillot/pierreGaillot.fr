@@ -6,7 +6,7 @@
 
       <div  class="bg-footer" [ngStyle]="{'background-color':skill.color}">
         <mat-card-actions>
-          <button mat-button>voir les projets</button>
+          <button mat-button [routerLink]="'/skillProjects/' + skill.id">voir les projets</button>
         </mat-card-actions>
       </div>
     </div>

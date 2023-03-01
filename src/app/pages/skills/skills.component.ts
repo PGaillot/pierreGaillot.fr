@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
-import { Skill } from 'src/app/models/skill';
 import { HttpClient } from "@angular/common/http";
 
-// import * as skillsData from 'src/app/data/skills.json';
 
 @Component({
   selector: 'app-skills',

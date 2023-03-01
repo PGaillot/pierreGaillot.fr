@@ -1,1 +1,10 @@
-<p>skill-projects works!</p>
+<body id="page">
+
+    <h1> {{ skill.displayName }}</h1>
+    <p>{{ skill.description}}</p>
+    <mat-divider></mat-divider>
+    <div>
+        <app-project-card *ngFor="let project of projects" [project]="project"></app-project-card>
+    </div>
+
+</body>
