@@ -1,6 +1,7 @@
 <mat-card class="project-card">
   <mat-card-header>
-    <div mat-card-avatar class="project-header-image" [ngStyle]="{'background-image' : 'url(' + project.iconUrl + ')'}"></div>
+    <div mat-card-avatar class="project-header-image" *ngIf="project.iconUrl != undefined" [ngStyle]="{'background-image' : 'url(' + project.iconUrl + ')'}"></div>
+    <div mat-card-avatar class="project-header-image" *ngIf="project.iconUrl == undefined"></div>
     <mat-card-title>{{ project.displayName }}</mat-card-title>
     <mat-card-subtitle>{{getMotivationFrench(project.motivation)}}</mat-card-subtitle>
   </mat-card-header>

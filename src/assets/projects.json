@@ -49,5 +49,16 @@
     "description": "The Trap Test est un jeu que j'ai réalisé sur Unreal engine durant mon temps libre. ça parle de ...",
     "imgUrl": "./assets/img/projects/TTT.png",
     "skillsId": [8, 3]
+  },
+  {
+    "id": 6,
+    "displayName": "Peintures & dessins",
+    "motivation":"PERSONAL",
+    "description": "une application android et ios.",
+    "imgUrl": "./assets/img/projects/sur-mesure-mockup.png",
+    "screenshots": [
+      "https://i.imgur.com/r9XNbOQ.jpg",
+      "https://i.imgur.com/Paqrz5J.jpg"
+    ]
   }
 ]
