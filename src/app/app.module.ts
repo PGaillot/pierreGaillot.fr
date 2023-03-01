@@ -33,7 +33,8 @@ import { SkillItemComponent } from './components/skill-item/skill-item.component
     AboutMeComponent,
     SkillsComponent,
     ProjectCardComponent,
-    ProjectComponent
+    ProjectComponent,
+    SkillItemComponent
   ],
   imports: [
     BrowserModule,
