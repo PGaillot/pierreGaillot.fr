@@ -3,12 +3,26 @@ import { Component, Input } from '@angular/core';
 import { Project } from 'src/app/models/project';
 import { Skill } from 'src/app/models/skill';
 import { MotivationType } from 'src/app/utils/motivationType';
+import { animate, style, transition, trigger } from "@angular/animations";
 
 @Component({
   selector: 'app-project-card',
   templateUrl: './project-card.component.html',
   styleUrls: ['./project-card.component.scss'],
+  animations: [
+    trigger('myInsertRemoveTrigger', [
+      transition(':enter', [
+        style({ opacity: 0 }),
+        animate('100ms', style({ opacity: 1 })),
+      ]),
+      transition(':leave', [
+        animate('100ms', style({ opacity: 0 }))
+      ])
+    ])]
 })
+
+
+
 export class ProjectCardComponent {
   @Input() project!: Project;
   skills: Skill[] = [];
@@ -83,3 +97,4 @@ export class ProjectCardComponent {
     return mtv;
   }
 }
+

@@ -1,4 +1,4 @@
-<mat-card class="project-card">
+<mat-card class="project-card" @myInsertRemoveTrigger>
   <mat-card-header>
     <div mat-card-avatar class="project-header-image" *ngIf="project.iconUrl != undefined" [ngStyle]="{'background-image' : 'url(' + project.iconUrl + ')'}"></div>
     <div mat-card-avatar class="project-header-image" *ngIf="project.iconUrl == undefined"></div>
