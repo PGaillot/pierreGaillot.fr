@@ -1,0 +1,28 @@
+.skill {
+    max-width: 15em;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  
+    img {
+      max-width: 8em;
+      max-height: 8em;
+      padding: 1em 0;
+    }
+  
+    p {
+      max-height: 7em;
+      overflow: hidden;
+    }
+  
+    .bg-footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      background-color: #cccccc;
+      width: 100%;
+      border-radius: 0 0 2em 2em;
+    }
+  }

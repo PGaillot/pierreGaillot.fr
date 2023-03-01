@@ -19,7 +19,7 @@ import {MatChipsModule} from '@angular/material/chips';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatIconModule} from '@angular/material/icon';
 import { ProjectComponent } from './pages/project/project.component';
-import { SkillProjectsComponent } from './pages/skill-projects/skill-projects.component';
+import { SkillItemComponent } from './components/skill-item/skill-item.component';
 
 
 
@@ -33,8 +33,7 @@ import { SkillProjectsComponent } from './pages/skill-projects/skill-projects.co
     AboutMeComponent,
     SkillsComponent,
     ProjectCardComponent,
-    ProjectComponent,
-    SkillProjectsComponent
+    ProjectComponent
   ],
   imports: [
     BrowserModule,
