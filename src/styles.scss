@@ -6,6 +6,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 #page {
     padding: 1em;
+    #header{
+        padding: 1em;
+      }
   }
 
 
@@ -19,8 +22,14 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
     #page{
         padding: 2em;
+
+        #header{
+            padding: 2em 12em;
+          }
     }
     
+
+
     .projects-cont{
         display: flex;
         flex-direction: row;

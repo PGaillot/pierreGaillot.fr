@@ -1,12 +1,18 @@
-
-    <div class="skill">
-      <img [src]="skill.iconUrl" [alt]="skill.displayName" />
-      <mat-chip>{{ skill.category }}</mat-chip>
-      <p class="description">{{ skill.description }}</p>
-
-      <div  class="bg-footer" [ngStyle]="{'background-color':skill.color}">
-        <mat-card-actions>
-          <button mat-button [routerLink]="'/skillProjects/' + skill.id">voir les projets</button>
-        </mat-card-actions>
-      </div>
+<div class="skill" [ngStyle]="{ 'background-color': skillColorAlpha }">
+  <div class="cont-a">
+    <img [src]="skill.iconUrl" [alt]="skill.displayName" />
+    <mat-chip>{{ skill.category }}</mat-chip>
+  </div>
+  <div class="cont-b">
+    <p class="description">{{ skill.description }}</p>
+  
+    <div class="bg-footer">
+      <mat-card-actions>
+        <button mat-button [routerLink]="'/skillProjects/' + skill.id">
+          voir les projets
+        </button>
+      </mat-card-actions>
     </div>
+  </div>
+  
+</div>

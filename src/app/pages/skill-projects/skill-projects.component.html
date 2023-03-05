@@ -1,8 +1,9 @@
 <body id="page">
-  <h1>{{ skill.displayName }}</h1>
-  <p>{{ skill.description }}</p>
-  <mat-divider></mat-divider>
-
+  <div id="header">
+    <h1>{{ skill.displayName }}</h1>
+    <p>{{ skill.description }}</p>
+    <mat-divider></mat-divider>
+  </div>
   <div>
     <ng-container *ngIf="projects.length > 0; else noProject">
       <h2>

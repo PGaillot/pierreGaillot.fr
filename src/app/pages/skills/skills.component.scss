@@ -3,9 +3,23 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-evenly;
-  gap: 3em;
-  padding: 3em 2em;
+  gap: 1em;
+  padding: 2em 1em;
 }
 
+#header{
+  padding: 1em;
+}
+
+.chip-listbox{
+  padding: 1em 0;
+}
+
+@media (min-width: 768px){
+  .skill-cont {
+    gap: 2em;
+      padding: 0 8em;
+  }
+
+}
 

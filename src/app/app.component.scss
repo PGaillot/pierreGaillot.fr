@@ -1,0 +1,8 @@
+
+:host ::ng-deep .tabMenuPanel {
+    top: 0;
+    z-index: 9999999; 
+    position: sticky;
+    position: -webkit-sticky; /* macOS/iOS Safari */   
+    background-color: rgb(255, 255, 255); 
+}

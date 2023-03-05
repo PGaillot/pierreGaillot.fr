@@ -48,7 +48,7 @@
     "motivation":"FORMATION",
     "description": "The Trap Test est un jeu que j'ai réalisé sur Unreal engine durant mon temps libre. ça parle de ...",
     "imgUrl": "./assets/img/projects/TTT.png",
-    "skillsId": [8, 3]
+    "skillsId": [8, 3, 9]
   },
   {
     "id": 6,

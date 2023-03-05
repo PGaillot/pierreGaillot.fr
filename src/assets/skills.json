@@ -76,6 +76,15 @@
     "category": "dev",
     "level": 90,
     "description": "Adobe Illustrator est un logiciel de dessin vectoriel utilisé pour créer des illustrations, des graphiques et des logos. Il est largement utilisé dans l'industrie du design graphique pour créer des designs de haute qualité pour l'impression et le web. Les utilisateurs peuvent dessiner des formes vectorielles, créer des motifs, des gradients et des effets spéciaux, ainsi que travailler avec des images raster pour créer des designs complexes. Illustrator est connu pour sa flexibilité et sa facilité d'utilisation, ainsi que pour son intégration étroite avec les autres applications Adobe Creative Suite, telles que Photoshop et InDesign."
+  },
+  {
+    "id":9,
+    "displayName": "Miro",
+    "iconUrl": "https://seeklogo.com/images/M/miro-logo-4F00416377-seeklogo.com.png",
+    "category": "productivité",
+    "level": 90,
+    "color":"#ffd02f",
+    "description": "Adobe Illustrator est un logiciel de dessin vectoriel utilisé pour créer des illustrations, des graphiques et des logos. Il est largement utilisé dans l'industrie du design graphique pour créer des designs de haute qualité pour l'impression et le web. Les utilisateurs peuvent dessiner des formes vectorielles, créer des motifs, des gradients et des effets spéciaux, ainsi que travailler avec des images raster pour créer des designs complexes. Illustrator est connu pour sa flexibilité et sa facilité d'utilisation, ainsi que pour son intégration étroite avec les autres applications Adobe Creative Suite, telles que Photoshop et InDesign."
   }
 
 ]
