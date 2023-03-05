@@ -4,7 +4,7 @@
     "displayName": "sur mesure",
     "iconUrl":"./assets/icons/sur-mesure-icon.svg",
     "motivation":"PROFESSIONAL",
-    "description": "une application android et ios.",
+    "description": "une application android et ios.In volutpat erat justo, in laoreet leo viverra in. Sed eu mi at neque auctor ultricies a dapibus nisl. Donec aliquet euismod leo, sit amet elementum purus efficitur vel. Proin varius augue diam, eu commodo ex accumsan id. Praesent vestibulum scelerisque elit, fermentum vulputate elit convallis id. Donec posuere interdum magna in pulvinar. Donec id placerat turpis. Maecenas dictum, lorem id pellentesque ullamcorper, mauris massa aliquet sapien, sit amet pulvinar metus dolor et enim. Sed sed ipsum nec arcu congue bibendum eu non massa. Curabitur id lorem eros. ",
     "imgUrl": "./assets/img/projects/sur-mesure-mockup.png",
     "gitUrl": "https://github.com/LevelUpCluster/sur-mesure-app",
     "skillsId": [0, 7, 5],

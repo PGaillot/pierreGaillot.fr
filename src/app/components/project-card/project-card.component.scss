@@ -2,19 +2,9 @@
   margin: 1em;
   max-width: 100%;
 
-  .project-image{
+  .project-image {
     max-height: 10em;
     object-fit: cover;
-  }
-}
-
-@media (min-width: 768px) {
-  .project-card {
-    width: 25em;
-
-    .project-image {
-      max-height: 25em;
-    }
   }
 }
 
@@ -26,6 +16,12 @@
 
 .project-description {
   margin-top: 1em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+          line-clamp: 3; 
+  -webkit-box-orient: vertical;
 }
 
 .skills-chips-list {
@@ -35,5 +31,15 @@
 #git-button:disabled {
   img {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: 768px) {
+  .project-card {
+    width: 25em;
+
+    .project-image {
+      max-height: 25em;
+    }
   }
 }

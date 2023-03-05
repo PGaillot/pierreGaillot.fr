@@ -9,6 +9,7 @@ import { Project } from 'src/app/models/project';
 })
 export class ProjectsComponent {
   projects: any = [];
+  motivations:string[] = [];
 
   constructor(
     private httpClient: HttpClient
@@ -18,6 +19,22 @@ export class ProjectsComponent {
     this.httpClient.get("assets/projects.json").subscribe(data =>{
       const projectsData = data;
       this.projects = projectsData;
+      this.getMotivation();
     })
+  }
+
+  getMotivation(){
+    this.projects.forEach((project:Project) => {
+      // TODO check motivations and add this to Motivation List
+      if(project.motivation != undefined){
+        if(!this.motivations.includes(project.motivation)){
+          this.motivations.push(project.motivation)
+        }
+      }
+    });
+  }
+
+  setChipSelected(chipSelected:string){
+  
   }
 }
