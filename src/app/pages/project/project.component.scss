@@ -1,24 +1,30 @@
-
-body{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 1em;
-}
-#screenshot{
-    max-width: 25em;
-    max-height: 25em;
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1em;
 }
 
-#header-icon{
-    width: 30em;
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  img {
+    max-width: 30em;
     height: auto;
+  }
+  
 }
 
-.skills-category-cont{
-    max-width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    gap: 2em;
+#screenshot {
+  max-width: 25em;
+  max-height: 25em;
+}
+
+.skills-category-cont {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 2em;
 }

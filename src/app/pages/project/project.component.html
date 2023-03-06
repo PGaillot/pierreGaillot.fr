@@ -1,11 +1,13 @@
 <body id="page">
-  <img
-    id="header-icon"
-    *ngIf="project.iconUrl != undefined"
-    [src]="project.iconUrl"
-    alt=""
-  />
-  <h1>{{ project.displayName | uppercase }}</h1>
+  <div class="header">
+    <img
+      *ngIf="project.iconUrl != undefined"
+      [src]="project.iconUrl"
+      alt=""
+    />
+    <h1>{{ project.displayName | uppercase }}</h1>
+  </div>
+  
   <p>{{ project.description }}</p>
 
   <div class="skills-category-cont" *ngIf="skillsCategory.length > 0">
