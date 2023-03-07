@@ -21,13 +21,12 @@ $img-size-lg: 8em;
   }
 
   .cont-a {
-    width: 8em;
+    min-width: 8em;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:space-around;
+    justify-content:center;
 
-    padding: 2em;
     gap: 1em;
   }
 
@@ -37,6 +36,16 @@ $img-size-lg: 8em;
     flex-direction: column;
     align-items: start;
     justify-content: space-around;
+    
+    p{
+      overflow: hidden;
+      height: 4.5em;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+              line-clamp: 4; 
+      -webkit-box-orient: vertical;
+    }
   }
 
   .bg-footer {
