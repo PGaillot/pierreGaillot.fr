@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Project } from 'src/app/models/project';
 import { Skill } from 'src/app/models/skill';
+import { SkillService } from 'src/app/services/skill.service';
 
 @Component({
   selector: 'app-skill-projects',
@@ -16,7 +17,8 @@ export class SkillProjectsComponent {
 
   constructor(
     private activatedRoute: ActivatedRoute,
-    private httpClient: HttpClient
+    private httpClient: HttpClient,
+    private skillServices:SkillService,
   ) {}
 
   ngOnInit(): void {

@@ -18,7 +18,7 @@
   },
   {
     "id":2,
-    "displayName": "Java",
+    "displayName": "java",
     "iconUrl": "https://upload.wikimedia.org/wikipedia/fr/thumb/2/2e/Java_Logo.svg/270px-Java_Logo.svg.png",
     "category": "dev",
     "level": 90,
@@ -79,7 +79,7 @@
   },
   {
     "id":9,
-    "displayName": "Miro",
+    "displayName": "miro",
     "iconUrl": "https://seeklogo.com/images/M/miro-logo-4F00416377-seeklogo.com.png",
     "category": "productivité",
     "level": 90,
