@@ -17,6 +17,7 @@
 
 @media (min-width: 768px){
   .skill-cont {
+    flex-direction: row;
     gap: 2em;
       padding: 0 8em;
   }
