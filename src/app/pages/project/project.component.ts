@@ -1,8 +1,10 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { BeforeSlideDetail } from 'lightgallery/lg-events';
 import { Project } from 'src/app/models/project';
 import { Skill } from 'src/app/models/skill';
+import lgZoom from 'lightgallery/plugins/zoom';
 
 @Component({
   selector: 'app-project',
@@ -12,8 +14,8 @@ import { Skill } from 'src/app/models/skill';
 export class ProjectComponent {
   skills: Skill[] = [];
   gitSkill: Skill = new Skill();
-  github:boolean = false;
-  skillsCategory:string[] = [];
+  github: boolean = false;
+  skillsCategory: string[] = [];
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -27,6 +29,16 @@ export class ProjectComponent {
     this.projectId = this.activatedRoute.snapshot.paramMap.get('projectId');
     this.getProject();
   }
+
+  settings = {
+    counter: false,
+    plugins: [lgZoom],
+  };
+
+  onBeforeSlide = (detail: BeforeSlideDetail): void => {
+    const { index, prevIndex } = detail;
+    console.log(index, prevIndex);
+  };
 
   getProject() {
     this.httpClient.get('assets/projects.json').subscribe((data) => {
@@ -45,12 +57,12 @@ export class ProjectComponent {
         }
       });
     });
-    this.getSkills()
+    this.getSkills();
   }
 
   getSkills() {
     this.httpClient.get('assets/skills.json').subscribe((data) => {
-      const allSkills:Skill[] = [];
+      const allSkills: Skill[] = [];
       const skillsData = data;
       let skills: any = skillsData;
       skills.forEach((_skill: any) => {
@@ -65,11 +77,11 @@ export class ProjectComponent {
         allSkills.push(sk);
         if (sk.displayName === 'github') this.gitSkill = sk;
       });
-      this.project.skillsId!.forEach(skillId => {
-        allSkills.forEach(skill => {
-          if(skillId == skill.id){
-            if(skillId == this.gitSkill.id) this.github = true;
-            this.skills.push(skill)
+      this.project.skillsId!.forEach((skillId) => {
+        allSkills.forEach((skill) => {
+          if (skillId == skill.id) {
+            if (skillId == this.gitSkill.id) this.github = true;
+            this.skills.push(skill);
           }
         });
       });
@@ -77,25 +89,35 @@ export class ProjectComponent {
     });
   }
 
-  onGitClick(){
-    window.open(this.project.gitUrl, "_blank");
+  onGitClick() {
+    window.open(this.project.gitUrl, '_blank');
   }
 
-  getSkillsCategory(){
-    this.skills.forEach(skill => {
-      if(skill.category != undefined){
-        if(!this.skillsCategory.includes(skill.category))
-        this.skillsCategory.push(skill.category)
+  getSkillsCategory() {
+    this.skills.forEach((skill) => {
+      if (skill.category != undefined) {
+        if (!this.skillsCategory.includes(skill.category))
+          this.skillsCategory.push(skill.category);
       }
     });
   }
 
-  getSkillByCategory(category:string):Skill[]{
-    let categorySkills:Skill[] = []
-    this.skills.forEach(skill => {
-      if(skill.category === category) categorySkills.push(skill)
+  getSkillByCategory(category: string): Skill[] {
+    let categorySkills: Skill[] = [];
+    this.skills.forEach((skill) => {
+      if (skill.category === category) categorySkills.push(skill);
     });
     return categorySkills;
   }
 
+  // async getThumbnails(imageLink: string){
+  //   const imageThumbnail = require('image-thumbnail');
+  //   try {
+  //     const thumbnail = await imageThumbnail({ uri: imageLink });
+  //     console.log(thumbnail);
+  //   } catch (erreur) {
+  //     console.log(erreur);
+  //   }
+    
+  // }
 }

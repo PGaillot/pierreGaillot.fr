@@ -29,12 +29,21 @@
     *ngIf="project.screenshots != undefined"
   >
     <h2>screenshots :</h2>
-    <img
+    <!-- <img
       id="screenshot"
       *ngFor="let screenshot of project.screenshots"
       [src]="screenshot"
       alt=""
-    />
+    /> -->
+
+    <lightgallery [settings]="settings" [onBeforeSlide]="onBeforeSlide">
+      
+      <a *ngFor="let screenshot of project.screenshots" [href]="screenshot">
+          <img alt="img1" [src]="screenshot" />
+      </a>
+
+  </lightgallery>
+
   </div>
 
   <button

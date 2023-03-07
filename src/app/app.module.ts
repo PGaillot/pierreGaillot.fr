@@ -22,6 +22,8 @@ import { ProjectComponent } from './pages/project/project.component';
 import { SkillItemComponent } from './components/skill-item/skill-item.component';
 import {SkillProjectsComponent} from './pages/skill-projects/skill-projects.component'
 
+// Light Gallery
+import { LightgalleryModule } from 'lightgallery/angular';
 
 
 
@@ -43,6 +45,8 @@ import {SkillProjectsComponent} from './pages/skill-projects/skill-projects.comp
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    //LightGallery
+    LightgalleryModule,
     // MatComponents
     MatTabsModule,
     MatCardModule,
