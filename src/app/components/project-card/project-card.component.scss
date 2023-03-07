@@ -1,9 +1,10 @@
 .project-card {
   margin: 1em;
-  max-width: 100%;
+  // width: 100%;
 
   .project-image {
     max-height: 10em;
+    width: 100%;
     object-fit: cover;
   }
 }
