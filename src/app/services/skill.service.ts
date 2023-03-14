@@ -38,13 +38,31 @@ export class SkillService {
             } else {
               skillsSelected = data;
             }
-            this.sortSkillsAZ(skillsSelected)
+            this.sortSkillsAZ(skillsSelected);
             resolve(skillsSelected);
           })
           .catch((error) => reject(error));
       }
     );
     return skillSelectedPromise;
+  }
+
+  public getSkillById(skillId: number): Promise<Skill> {
+    const skillPromise: Promise<Skill> = new Promise<Skill>(
+      (resolve, reject) => {
+        try {
+          this.getSkills().then((skills: Skill[]) => {
+            if (skills.find((skill: Skill) => skill.id === skillId)) {
+              const i = skills.findIndex((skill) => skill.id === skillId);
+              resolve(skills[i]);
+            }
+          });
+        } catch (error) {
+          reject(error);
+        }
+      }
+    );
+    return skillPromise;
   }
 
   public sortSkillsAZ(skills: Skill[]) {
@@ -56,7 +74,7 @@ export class SkillService {
       if (a.displayName > b.displayName) {
         return 1;
       }
-      return 0
+      return 0;
     });
     return orderedSkills;
   }

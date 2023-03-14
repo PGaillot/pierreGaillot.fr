@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { Project } from 'src/app/models/project';
+import { ProjectService } from 'src/app/services/project.service';
 
 @Component({
   selector: 'app-projects',
@@ -14,16 +15,21 @@ export class ProjectsComponent {
   projectsSelected: Project[] =[];
 
   constructor(
-    private httpClient: HttpClient
+    private projectsServices:ProjectService,
     ){}
     
   ngOnInit(){
-    this.httpClient.get("assets/projects.json").subscribe(data =>{
-      const projectsData = data;
-      this.projects = projectsData;
+
+    this.projectsServices.
+    getProjects()
+    .then(data => {
+      this.projects = data;
+
       this.getMotivation();
-      this.projectsSelected = this.projects;
+      this.refreshList(this.motivationSelected)
     })
+
+
 
   }
 
