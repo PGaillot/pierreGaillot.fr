@@ -1,12 +1,17 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Project } from '../models/project';
 import { Skill } from '../models/skill';
+import { ProjectService } from './project.service';
 
 @Injectable({
   providedIn: 'root',
 })
 export class SkillService {
-  constructor(private httpClient: HttpClient) {}
+  constructor(
+    private httpClient: HttpClient,
+    private projectServices: ProjectService
+  ) {}
 
   public getSkills(): Promise<Skill[]> {
     const skillsPromise: Promise<Skill[]> = new Promise<Skill[]>(
@@ -19,6 +24,27 @@ export class SkillService {
       }
     );
     return skillsPromise;
+  }
+
+  public getSkillsProject(project: Project): Promise<Skill[]> {
+    let filtredSkills:Skill[] = [];
+    const skillsProjectPromise: Promise<Skill[]> = new Promise<Skill[]>(
+      (resolve, reject) => {
+
+        this.getSkills().then((skills:Skill[])=>{
+          skills.forEach((skill:Skill) => {
+
+            project.skillsId?.forEach(skillId => {
+              if(skillId == skill.id ){
+                filtredSkills.push(skill)
+              }
+            });
+          });
+          resolve(filtredSkills)
+        })
+      }
+    );
+    return skillsProjectPromise;
   }
 
   public getSkillsByCategories(categories: string[]): Promise<Skill[]> {

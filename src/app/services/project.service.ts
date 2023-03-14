@@ -28,10 +28,8 @@ export class ProjectService {
         this.getProjects().then((projects: Project[]) => {
           skillsId.forEach((id:number) => {
             projects.forEach((project:Project) => {
-              console.log(project.skillsId?.includes(id));
               project.skillsId?.forEach(pSkillId => {
                 if(pSkillId == id){
-                  console.log('Project Name = ' + project.displayName);
                   if (!filtedProjects.includes(project)) {
                     filtedProjects.push(project);
                   }
@@ -45,5 +43,20 @@ export class ProjectService {
       }
     );
     return projectsPromise;
+  }
+  
+  public getProjectById(projectId:number):Promise<Project>{
+    const projectPromise:Promise<Project> = new Promise<Project>(
+      (resolve, reject) => {
+        this.getProjects().then((projects:Project[])=> {
+          projects.forEach(project => {            
+            if(project.id == projectId){
+              resolve(project)
+            }
+          });
+        })
+      }
+    )
+    return projectPromise;
   }
 }
