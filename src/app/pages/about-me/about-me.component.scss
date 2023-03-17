@@ -24,8 +24,7 @@
   align-items: center;
 
   img {
-    min-width: 300px;
-    max-width: 400px;
+    max-width: 100%;
   }
 
   .intro-cont {
@@ -46,6 +45,12 @@
   padding: 2em 0;
   mat-divider {
     margin-top: 1em;
+  }
+  h2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5em;
   }
 }
 
