@@ -1,20 +1,24 @@
 <body id="page">
   <div id="header">
-    <h1>Mes compétances</h1>
+    <h1>Mes Projets</h1>
     <p>
-      La page compétences de mon curriculum-vitae présente mes compétences
-      professionnelles, mes réalisations et mes expériences. Elle met en avant mes
-      connaissances techniques, mes compétences en communication et mes capacités
-      à travailler en équipe. Elle met également en avant mes réalisations passées
-      et les projets sur lesquels j'ai travaillé, ainsi que mes certifications et
-      mes formations.
+      Ici, vous découvrirez un aperçu de
+      mes réalisations variées, allant de la peinture à la conception
+      d'applications Android. Passionné par la création, je suis constamment à
+      la recherche de nouveaux défis et de projets innovants. J'aime explorer
+      différents domaines, ce qui m'a permis de développer une grande
+      polyvalence et une approche créative unique dans chacune de mes
+      réalisations.
     </p>
     <mat-chip-listbox selectable multiple class="chip-listbox">
-    <mat-chip-option *ngFor="let motivation of motivations" (click)="setChipSelected(motivation)">{{motivation}}</mat-chip-option>
+      <mat-chip-option
+        *ngFor="let motivation of motivations"
+        (click)="setChipSelected(motivation)"
+        >{{ motivation }}</mat-chip-option
+      >
     </mat-chip-listbox>
     <mat-divider></mat-divider>
   </div>
-
 
   <div class="projects-cont">
     <app-project-card
