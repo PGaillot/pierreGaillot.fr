@@ -1,0 +1,26 @@
+.header {
+  padding-top: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  h1 {
+    width: auto;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+  }
+  h2 {
+    width: auto;
+    font-weight: 200;
+  }
+}
+
+
+.content-block{
+  padding: 2em 0;
+  mat-divider{
+    margin-top: 1em;
+  }
+}

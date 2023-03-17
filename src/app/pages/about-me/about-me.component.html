@@ -1,11 +1,101 @@
 <body id="page">
+  <div class="header">
     <h1>Pierre Gaillot</h1>
+    <h2>développeur front end</h2>
+  </div>
+
+  <p class="intro">
+    Bienvenue sur mon portfolio. Sur ce site web, je présente mon parcours, mes
+    motivations et mes compétences, ainsi que quelques projets que j'ai eu la
+    chance de réaliser.
+  </p>
+
+  <div class="content-block">
     <h2>mon parcours</h2>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi ipsum debitis repudiandae, reiciendis molestias omnis blanditiis tempora minima veniam consectetur libero alias dolore voluptatum mollitia obcaecati tenetur porro possimus similique! Quos laborum nostrum, provident voluptatem cupiditate, recusandae neque amet dolorem voluptate quas officia doloribus incidunt ea fugit necessitatibus esse repellendus!</p>
-    <h2>Mes motivations</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos cupiditate, a, accusantium excepturi ullam enim fugiat, alias inventore mollitia rem quas magni non ipsum. Explicabo tempore similique amet magnam quidem fuga cum ex numquam, doloribus totam sint magni iste eligendi minus perferendis? Optio quaerat, expedita ipsa molestiae cumque mollitia ducimus non rem facere reiciendis. Autem rerum commodi porro necessitatibus aliquid.</p>
+    <p class="intro">
+      Voici un aperçu des différentes expériences professionnelles que j'ai pu
+      acquérir. C'est grâce à ce choix que je suis désormais développeur
+      front-end, avec quelques casquettes en plus.
+    </p>
+    <mat-tree [dataSource]="dataSource" [treeControl]="treeControl">
+      <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding>
+        <button mat-icon-button disabled></button>
+        {{ node.name }}
+      </mat-tree-node>
+      <!-- This is the tree node template for expandable nodes -->
+      <mat-tree-node
+        *matTreeNodeDef="let node; when: hasChild"
+        matTreeNodePadding
+      >
+        <button
+          mat-icon-button
+          matTreeNodeToggle
+          [attr.aria-label]="'Toggle ' + node.name"
+        >
+          <mat-icon class="mat-icon-rtl-mirror">
+            {{ treeControl.isExpanded(node) ? "expand_more" : "chevron_right" }}
+          </mat-icon>
+        </button>
+        {{ node.name }}
+      </mat-tree-node>
+    </mat-tree>
+    <mat-divider> </mat-divider>
+  </div>
+
+  <div class="content-block">
     <h2>mes études</h2>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum sint, laudantium nam consequatur ullam quos a iusto sit porro eligendi, inventore libero eaque eius ipsa voluptatum rerum fugiat neque pariatur!</p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum sint,
+      laudantium nam consequatur ullam quos a iusto sit porro eligendi,
+      inventore libero eaque eius ipsa voluptatum rerum fugiat neque pariatur!
+    </p>
+    <mat-divider> </mat-divider>
+  </div>
+
+  <div class="content-block">
+    <h2>Mes motivations</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+      cupiditate, a, accusantium excepturi ullam enim fugiat, alias inventore
+      mollitia rem quas magni non ipsum. Explicabo tempore similique amet magnam
+      quidem fuga cum ex numquam, doloribus totam sint magni iste eligendi minus
+      perferendis? Optio quaerat, expedita ipsa molestiae cumque mollitia
+      ducimus non rem facere reiciendis. Autem rerum commodi porro
+      necessitatibus aliquid.
+    </p>
+    <mat-divider> </mat-divider>
+  </div>
+
+  <div class="content-block">
     <h2>mes passions</h2>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est quaerat vero ad, ipsam pariatur ullam alias. Porro molestias dolorem nostrum?</p>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est quaerat vero
+      ad, ipsam pariatur ullam alias. Porro molestias dolorem nostrum?
+    </p>
+    <mat-divider> </mat-divider>
+  </div>
+
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Pierre Gaillot</mat-card-title>
+      <mat-card-subtitle>développeur front end</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>
+        Pour plus d'information, ou simplement pour discuter vous pouvez me
+        contacter par téléphone ou par mail.
+      </p>
+      <ul>
+        <li>06.65.65.62.62</li>
+        <li>pr.gaillot@gmail.com</li>
+    </ul>
+
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>
+        <mat-icon svgIcon="linkedin"></mat-icon>linkedin
+      </button>
+      <button mat-button><mat-icon svgIcon="insta"></mat-icon>instagram</button>
+    </mat-card-actions>
+  </mat-card>
 </body>
