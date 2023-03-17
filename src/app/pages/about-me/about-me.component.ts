@@ -161,7 +161,7 @@ export class AboutMeComponent {
         plugins: {
           legend: {
             align:'start',
-            position: 'top',
+            position: 'bottom',
           },
         },
       },
