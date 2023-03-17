@@ -123,6 +123,10 @@ export class AboutMeComponent {
     this.studiesDataSource.data = STUDIES_TREE_DATA;
   }
 
+  openLink(link:any){
+    window.open(link)
+  }
+
   ngOnInit(): void {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
@@ -194,4 +198,5 @@ export class AboutMeComponent {
   );
 
   hasChild = (_: number, node: ExperienceFlatNode) => node.expandable;
+
 }
