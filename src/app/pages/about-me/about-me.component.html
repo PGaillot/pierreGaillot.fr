@@ -24,7 +24,7 @@
       acquérir. C'est grâce à ce choix que je suis désormais développeur
       front-end, avec quelques casquettes en plus.
     </p>
-    <mat-tree [dataSource]="dataSource" [treeControl]="treeControl">
+    <mat-tree [dataSource]="expDataSource" [treeControl]="treeControl">
       <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding>
         <button mat-icon-button disabled></button>
         {{ node.name }}
@@ -51,11 +51,34 @@
 
   <div class="content-block">
     <h2>mes études</h2>
-    <p>
+    <p class="intro">
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum sint,
       laudantium nam consequatur ullam quos a iusto sit porro eligendi,
       inventore libero eaque eius ipsa voluptatum rerum fugiat neque pariatur!
     </p>
+
+    <mat-tree [dataSource]="studiesDataSource" [treeControl]="treeControl">
+        <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding>
+          <button mat-icon-button disabled></button>
+          {{ node.name }}
+        </mat-tree-node>
+        <!-- This is the tree node template for expandable nodes -->
+        <mat-tree-node
+          *matTreeNodeDef="let node; when: hasChild"
+          matTreeNodePadding
+        >
+          <button
+            mat-icon-button
+            matTreeNodeToggle
+            [attr.aria-label]="'Toggle ' + node.name"
+          >
+            <mat-icon class="mat-icon-rtl-mirror">
+              {{ treeControl.isExpanded(node) ? "expand_more" : "chevron_right" }}
+            </mat-icon>
+          </button>
+          {{ node.name }}
+        </mat-tree-node>
+      </mat-tree>
     <mat-divider> </mat-divider>
   </div>
 
@@ -76,8 +99,10 @@
   <div class="content-block">
     <h2>mes passions</h2>
     <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est quaerat vero
-      ad, ipsam pariatur ullam alias. Porro molestias dolorem nostrum?
+        Grâce au graphique ci joint, vous pourrez vous faire un idée des différentes manières dont j'aime occuper mes mains et mon esprit durant mon temps disponible.
+Nous vivons une époque fantastique, ou les connaissances sont accessibles à tous. Alors, demain je pourrais très bien apprendre la physique d'un corps noir dans l'espace, ou les claquettes comme Savion Glover.
+        Aujourd'hui je me contente d'appendre, le langage programmation en Python, en C++, l'Arduino et l'électronique mais aussi l’aquarelle et le piano.
+        Enfin vous l'aurez compris je suis curieux, et déterminé à ne pas laisser mon cerveau s'ennuyer.
     </p>
     <mat-divider> </mat-divider>
   </div>

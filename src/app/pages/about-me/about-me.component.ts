@@ -10,28 +10,7 @@ interface ExperienceNode {
   children?: ExperienceNode[];
 }
 
-// const TREE_DATA: ExperienceNode[] = [
-//   {
-//     name: `Moniteur d'atelier / esat apf amiens(80)`,
-//     children: [{name: `en 2018, j'ai travaillé à l'ESAT de l'association des Paralysés de France comme moniteur d'atelier, je devais gérer une équipe de 8 personnes.`}],
-//   },
-//   {
-//     name: 'Vegetables',
-//     children: [
-//       {
-//         name: 'Green',
-//         children: [{name: 'Broccoli'}, {name: 'Brussels sprouts'}],
-//       },
-//       {
-//         name: 'Orange',
-//         children: [{name: 'Pumpkins'}, {name: 'Carrots'}],
-//       },
-//     ],
-//   },
-// ];
-
-
-const TREE_DATA: ExperienceNode[] = [
+const EXP_TREE_DATA: ExperienceNode[] = [
   {
     name: `2012 / Intervenant Graphisme`,
     children: [{name: `durant 6 semaines en 2012, Création,et découverte du graphisme pour les élèves de 3ème et 6ème.`}],
@@ -55,6 +34,29 @@ const TREE_DATA: ExperienceNode[] = [
   {
     name:`2021 - 2023 / Développeur front end`,
     children: [{name: `Level Up cluster.`}],
+  }
+];
+
+const STUDIES_TREE_DATA: ExperienceNode[] = [
+  {
+    name: `Développeur d'application - Android`,
+    children: [{name: `Formation réalisé au cours de mon experience chez levelUp-cluster en 2022`}],
+  },
+  {
+    name: `FORAMATION BGE / CRÉER ET ENTREPRENDRE`,
+    children: [{name: ` (ÉCOLE SUPÉRIEURE D’ARTS DE CAMBRAI)   (59)`}],
+  },
+  {
+    name: `1ERE & 2EME ANNÉE ESAC`,
+    children: [{name: `(ÉCOLE SUPÉRIEURE D’ARTS DE CAMBRAI)   (59)`}],
+  },
+  {
+    name: `1ERE ANNÉE ESBA`,
+    children: [{name: `/ (ÉCOLE SUPÉRIEURE DES BEAUX ARTS) VALENCIENNES (59)`}],
+  },
+  {
+    name:`BAC PRO & CAP COMMUNICATION GRAPHIQUE`,
+    children: [{name: ` Lycée Pro Sainte Marie BAILLEUL (59) avec la mention A.B.`}],
   }
 ];
 
@@ -90,7 +92,9 @@ export class AboutMeComponent {
       )
     );
 
-    this.dataSource.data = TREE_DATA;
+    this.expDataSource.data = EXP_TREE_DATA;
+    this.studiesDataSource.data = STUDIES_TREE_DATA;
+
   }
 
 
@@ -114,7 +118,8 @@ export class AboutMeComponent {
     node => node.children,
   );
 
-  dataSource = new MatTreeFlatDataSource(this.treeControl, this.treeFlattener);
+  expDataSource = new MatTreeFlatDataSource(this.treeControl, this.treeFlattener);
+  studiesDataSource = new MatTreeFlatDataSource(this.treeControl, this.treeFlattener);
  
   hasChild = (_: number, node: ExperienceFlatNode) => node.expandable;
   
