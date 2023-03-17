@@ -1,19 +1,42 @@
 body {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
   gap: 1em;
+  margin-top: 2em;
 }
 
 .header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 1em;
   img {
     max-width: 30em;
+    min-width: 10em;
     height: auto;
   }
-  
+
+  .title-cont {
+    text-align: center;
+    h1 {
+      font-size: 24pt;
+      font-weight: 500;
+      margin: 0;
+    }
+    p {
+      color: #b1b1b1;
+    }
+  }
+}
+.desc {
+  padding: 0 1em;
+}
+
+.cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #screenshot {
@@ -21,10 +44,24 @@ body {
   max-height: 25em;
 }
 
+
 .skills-category-cont {
-  max-width: 50%;
+  min-width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: start;
-  gap: 2em;
+  gap: 0.5em;
+  padding: 1em;
+
+}
+
+.skill-cont {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+  flex-wrap: wrap;
+
+  mat-chip{
+    background-color: none;
+  }
 }

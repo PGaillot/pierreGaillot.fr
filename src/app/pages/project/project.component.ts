@@ -1,5 +1,5 @@
-import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { ActivatedRoute } from '@angular/router';
 import { Project } from 'src/app/models/project';
 import { Skill } from 'src/app/models/skill';
@@ -20,7 +20,8 @@ export class ProjectComponent {
   constructor(
     private activatedRoute: ActivatedRoute,
     private projectService: ProjectService,
-    private skillService: SkillService
+    private skillService: SkillService,
+    private matSnackBar:MatSnackBar,
   ) {}
 
   project: Project = new Project();
@@ -40,15 +41,21 @@ export class ProjectComponent {
               this.github = true;
             }
           });
-          console.log(this.github);
           this.getSkillsCategory();
         });
       });
   }
 
-
   onGitClick() {
     window.open(this.project.gitUrl, '_blank');
+  }
+
+  onChipClick(skill:Skill){
+    
+    this.matSnackBar.open(("Voulsez vous ouvir les projets " + skill.displayName + " ?"), "ouvrir" , {
+      duration :2500
+    });
+    console.log(skill.displayName)
   }
 
   getSkillsCategory() {
