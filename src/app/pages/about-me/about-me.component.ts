@@ -7,94 +7,14 @@ import {
 } from '@angular/material/tree';
 import { DomSanitizer } from '@angular/platform-browser';
 import { Chart, registerables } from 'chart.js';
+import * as EXP from 'src/assets/treeData'
+import { TreeNode, ExperienceFlatNode } from 'src/assets/treeNode';
+
 Chart.register(...registerables);
 
-interface ExperienceNode {
-  name: string;
-  children?: ExperienceNode[];
-}
+const EXP_TREE_DATA:TreeNode[] = EXP.EXP_TREE_DATA;
+const STUDIES_TREE_DATA: TreeNode[] = EXP.STUDIES_TREE_DATA;
 
-const EXP_TREE_DATA: ExperienceNode[] = [
-  {
-    name: `2012 / Intervenant Graphisme`,
-    children: [
-      {
-        name: `durant 6 semaines en 2012, Création,et découverte du graphisme pour les élèves de 3ème et 6ème.`,
-      },
-    ],
-  },
-  {
-    name: `2013 - 2014 / Création de mon entreprise`,
-    children: [
-      { name: `Réalisation de projets visuel pour des professionnels` },
-    ],
-  },
-  {
-    name: `2015 / Référent Art`,
-    children: [
-      {
-        name: `durant 9 mois, en 2015 j’ai eu la chance d’etre le référant «Art» du LUC,  dans lequel je donnais des cours d’art aux enfants de 6 à 12 ans.`,
-      },
-    ],
-  },
-  {
-    name: `2016 - 2017 / Barista Starbucks`,
-    children: [
-      {
-        name: `j’ai participé en mai 2016 a l’ouverture du Starbucks de la rue Esquermoise dans lequel je participe également à la communication.`,
-      },
-    ],
-  },
-  {
-    name: `2018 - 2019 / Moniteur d'atelier`,
-    children: [
-      {
-        name: `en 2018, j'ai travaillé à l'ESAT de l'association des Paralysés de France comme moniteur d'atelier, je devais gérer une équipe de 8 personnes.`,
-      },
-    ],
-  },
-  {
-    name: `2021 - 2023 / Développeur front end`,
-    children: [{ name: `Level Up cluster.` }],
-  },
-];
-
-const STUDIES_TREE_DATA: ExperienceNode[] = [
-  {
-    name: `Développeur d'application - Android`,
-    children: [
-      {
-        name: `Formation réalisé au cours de mon experience chez levelUp-cluster en 2022`,
-      },
-    ],
-  },
-  {
-    name: `FORAMATION BGE / CRÉER ET ENTREPRENDRE`,
-    children: [{ name: ` (ÉCOLE SUPÉRIEURE D’ARTS DE CAMBRAI)   (59)` }],
-  },
-  {
-    name: `1ERE & 2EME ANNÉE ESAC`,
-    children: [{ name: `(ÉCOLE SUPÉRIEURE D’ARTS DE CAMBRAI)   (59)` }],
-  },
-  {
-    name: `1ERE ANNÉE ESBA`,
-    children: [
-      { name: `/ (ÉCOLE SUPÉRIEURE DES BEAUX ARTS) VALENCIENNES (59)` },
-    ],
-  },
-  {
-    name: `BAC PRO & CAP COMMUNICATION GRAPHIQUE`,
-    children: [
-      { name: ` Lycée Pro Sainte Marie BAILLEUL (59) avec la mention A.B.` },
-    ],
-  },
-];
-
-interface ExperienceFlatNode {
-  expandable: boolean;
-  name: string;
-  level: number;
-}
 
 @Component({
   selector: 'app-about-me',
@@ -128,8 +48,6 @@ export class AboutMeComponent {
   }
 
   ngOnInit(): void {
-    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
-    //Add 'implements OnInit' to the class.
     var myChart = new Chart('myChart', {
       type: 'doughnut',
       data: {
@@ -168,7 +86,7 @@ export class AboutMeComponent {
     });
   }
 
-  private _transformer = (node: ExperienceNode, level: number) => {
+  private _transformer = (node: TreeNode, level: number) => {
     return {
       expandable: !!node.children && node.children.length > 0,
       name: node.name,

@@ -34,10 +34,8 @@
     }
 
     border-top: 1px solid rgb(168, 168, 168);
-    // background-color: rgb(241, 241, 241);
     padding: 0.5em;
     padding-top: 1em;
-    // border-radius: 0.5em;
   }
 }
 
@@ -65,7 +63,18 @@
 
 
 #divChart{
+  padding: 1em 0;
   display: block;
   min-width: 350px;
   min-height: 350px;
+}
+
+@media (min-width: 768px){
+  #divChart{
+    display: block;
+    min-width: 350px;
+    min-height: 350px;
+    max-width: 450px;
+    max-height: 450px;
+  }
 }
