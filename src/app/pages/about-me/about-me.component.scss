@@ -1,0 +1,80 @@
+.header {
+  padding-top: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  h1 {
+    width: auto;
+    font-weight: 500;
+    font-size: 24pt;
+    padding: 0;
+    margin: 0;
+  }
+  h2 {
+    width: auto;
+    font-weight: 200;
+  }
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    max-width: 100%;
+  }
+
+  .intro-cont {
+    h3 {
+      font-size: 16pt;
+      font-weight: 400;
+    }
+
+    border-top: 1px solid rgb(168, 168, 168);
+    padding: 0.5em;
+    padding-top: 1em;
+  }
+}
+
+.content-block {
+  padding: 2em 0;
+  mat-divider {
+    margin-top: 1em;
+  }
+  h2{
+    font-weight: 300;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5em;
+  }
+}
+
+.contact-card-header-image{
+  background-color: rgb(233, 162, 32);
+  background-image: url(../../../assets/img/pierreG-100.png);
+  background-size: cover;
+  background-position: center;
+}
+
+
+#divChart{
+  padding: 1em 0;
+  display: block;
+  min-width: 350px;
+  min-height: 350px;
+}
+
+@media (min-width: 768px){
+  #divChart{
+    display: block;
+    min-width: 350px;
+    min-height: 350px;
+    max-width: 450px;
+    max-height: 450px;
+  }
+}

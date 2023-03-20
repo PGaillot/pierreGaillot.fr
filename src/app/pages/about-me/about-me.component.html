@@ -1,11 +1,169 @@
 <body id="page">
+  <div class="header">
     <h1>Pierre Gaillot</h1>
-    <h2>mon parcours</h2>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi ipsum debitis repudiandae, reiciendis molestias omnis blanditiis tempora minima veniam consectetur libero alias dolore voluptatum mollitia obcaecati tenetur porro possimus similique! Quos laborum nostrum, provident voluptatem cupiditate, recusandae neque amet dolorem voluptate quas officia doloribus incidunt ea fugit necessitatibus esse repellendus!</p>
-    <h2>Mes motivations</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos cupiditate, a, accusantium excepturi ullam enim fugiat, alias inventore mollitia rem quas magni non ipsum. Explicabo tempore similique amet magnam quidem fuga cum ex numquam, doloribus totam sint magni iste eligendi minus perferendis? Optio quaerat, expedita ipsa molestiae cumque mollitia ducimus non rem facere reiciendis. Autem rerum commodi porro necessitatibus aliquid.</p>
-    <h2>mes études</h2>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum sint, laudantium nam consequatur ullam quos a iusto sit porro eligendi, inventore libero eaque eius ipsa voluptatum rerum fugiat neque pariatur!</p>
-    <h2>mes passions</h2>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est quaerat vero ad, ipsam pariatur ullam alias. Porro molestias dolorem nostrum?</p>
+    <h2>développeur front end</h2>
+
+    <div class="intro">
+      <img src="../assets/img/pierreG-600.png" alt="" />
+
+      <div class="intro-cont">
+        <h3>Bienvenue sur mon portfolio !</h3>
+        <p>
+          Sur ce site web, je présente mon parcours, mes motivations et mes
+          compétences, ainsi que quelques projets que j'ai eu la chance de
+          réaliser.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="header">
+    <div class="content-block">
+      <h2><mat-icon>hiking</mat-icon> mon parcours</h2>
+      <p class="intro">
+        Voici un aperçu de mes différentes expériences professionnelles, grâce auxquelles je suis désormais développeur
+        front-end (avec quelques casquettes supplémentaires).
+      </p>
+      <mat-tree [dataSource]="expDataSource" [treeControl]="treeControl">
+        <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding>
+          <button mat-icon-button disabled></button>
+          {{ node.name }}
+        </mat-tree-node>
+        <!-- This is the tree node template for expandable nodes -->
+        <mat-tree-node
+          *matTreeNodeDef="let node; when: hasChild"
+          matTreeNodePadding
+        >
+          <button
+            mat-icon-button
+            matTreeNodeToggle
+            [attr.aria-label]="'Toggle ' + node.name"
+          >
+            <mat-icon class="mat-icon-rtl-mirror">
+              {{
+                treeControl.isExpanded(node) ? "expand_more" : "chevron_right"
+              }}
+            </mat-icon>
+          </button>
+          {{ node.name }}
+        </mat-tree-node>
+      </mat-tree>
+      <mat-divider> </mat-divider>
+    </div>
+
+    <div class="content-block">
+      <h2><mat-icon>school</mat-icon> mes études</h2>
+      <p class="intro">
+        J'ai d'abord réalisé des études en communication graphique et
+        conception artistique, avant d'apprendre en autodidacte (dans un premier temps) le développement web et mobile. En explorant les différentes ressources pédagogiques en ligne, j'ai
+        acquis des compétences en code, langages et technologies pour créer des
+        applications web et mobiles performantes. J'ai ensuite réalisé une formation de Développeur d'applications android, qui m'a permis d'approndir mes connaissances. Mes formations en
+        entrepreneuriat et gestion de projet ont également été des atouts pour réussir
+        dans le monde du développement web et mobile. Mes études d'arts m'ont
+        par ailleurs permis d'acquérir une grande sensibilité esthétique et une créativité
+        certaine, que je peux mobiliser à plusieurs étapes de réalisation de mes projets de développement.
+      </p>
+
+      <mat-tree [dataSource]="studiesDataSource" [treeControl]="treeControl">
+        <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding>
+          <button mat-icon-button disabled></button>
+          {{ node.name }}
+        </mat-tree-node>
+        <!-- This is the tree node template for expandable nodes -->
+        <mat-tree-node
+          *matTreeNodeDef="let node; when: hasChild"
+          matTreeNodePadding
+        >
+          <button
+            mat-icon-button
+            matTreeNodeToggle
+            [attr.aria-label]="'Toggle ' + node.name"
+          >
+            <mat-icon class="mat-icon-rtl-mirror">
+              {{
+                treeControl.isExpanded(node) ? "expand_more" : "chevron_right"
+              }}
+            </mat-icon>
+          </button>
+          {{ node.name }}
+        </mat-tree-node>
+      </mat-tree>
+      <mat-divider> </mat-divider>
+    </div>
+
+    <div class="content-block">
+      <h2><mat-icon>thumb_up</mat-icon> Mes motivations</h2>
+      <p>
+        Mon ambition professionnelle est de travailler sur des projets
+        innovants, porteurs de sens et qui ont un impact positif sur la société.
+        J'ai également à cœur d'aider les autres et de contribuer à leur
+        bien-être. Enfin, j'aime découvrir de nouvelles choses et relever de
+        nouveaux défis, ce qui me permet de me développer personnellement et
+        professionnellement. Ces trois motivations m'ont guidé tout au long de
+        ma carrière et m'ont permis de trouver des projets qui ont du sens pour
+        moi.
+      </p>
+      <mat-divider> </mat-divider>
+    </div>
+
+    <div class="content-block">
+      <h2><mat-icon>self_improvement</mat-icon> mes passions</h2>
+      <p>
+        Le graphique ci-joint vous permettra de découvrir les différentes
+        activités que j'apprécie et qui occupent mon temps libre. Aujourd'hui,
+        grâce à la facilité d'accès à la connaissance, il est possible
+        d'apprendre tout ce que l'on souhaite. Ainsi, demain je pourrais tout
+        aussi bien me lancer dans l'apprentissage de la physique des corps noirs
+        dans l'espace ou des claquettes à la Savion Glover. En attendant, j'ai
+        choisi de me concentrer sur l'apprentissage de JAVA, de l'aquarelle et
+        du piano. Je suis animé par une curiosité sans limites et une
+        détermination à ne jamais laisser mon cerveau s'ennuyer.
+      </p>
+
+      <div id="divChart">
+        <canvas id="myChart"></canvas>
+      </div>
+
+      <mat-divider> </mat-divider>
+    </div>
+
+    <div class="content-block">
+      <h2><mat-icon>alternate_email</mat-icon>contact</h2>
+
+      <mat-card>
+        <mat-card-header>
+          <div mat-card-avatar class="contact-card-header-image"></div>
+
+          <mat-card-title>Pierre Gaillot</mat-card-title>
+          <mat-card-subtitle>développeur front end</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <p>
+            Pour plus d'information, ou simplement pour discuter vous pouvez me
+            contacter par téléphone ou par mail.
+          </p>
+          <ul>
+            <li>06.65.65.62.62</li>
+            <li>pr.gaillot@gmail.com</li>
+          </ul>
+        </mat-card-content>
+        <mat-card-actions>
+          <button
+            mat-button
+            (click)="
+              openLink('https://www.linkedin.com/in/pierre-gaillot-4a01b585/')
+            "
+          >
+            <mat-icon svgIcon="linkedin"></mat-icon>linkedin
+          </button>
+          <button
+            mat-button
+            (click)="openLink('https://www.instagram.com/piergaillot/')"
+          >
+            <mat-icon svgIcon="insta"></mat-icon>instagram
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
 </body>

@@ -21,9 +21,12 @@ import {MatIconModule} from '@angular/material/icon';
 import { ProjectComponent } from './pages/project/project.component';
 import { SkillItemComponent } from './components/skill-item/skill-item.component';
 import {SkillProjectsComponent} from './pages/skill-projects/skill-projects.component'
+import {MatSnackBarModule} from '@angular/material/snack-bar'; 
+import {MatTreeModule} from '@angular/material/tree'; 
 
 // Light Gallery
-import { LightgalleryModule } from 'lightgallery/angular';
+import {  } from 'lightgallery/angular';
+
 
 
 
@@ -54,6 +57,8 @@ import { LightgalleryModule } from 'lightgallery/angular';
     MatChipsModule,
     MatDividerModule,
     MatIconModule,
+    MatSnackBarModule,
+    MatTreeModule,
 
   ],
   providers: [],

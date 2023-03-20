@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Skill } from 'src/app/models/skill';
+import { SkillService } from 'src/app/services/skill.service';
 
 @Component({
   selector: 'app-skills',
@@ -8,26 +9,33 @@ import { Skill } from 'src/app/models/skill';
   styleUrls: ['./skills.component.scss'],
 })
 export class SkillsComponent {
-  skills!: Skill[];
+  skills: Skill[] = [];
   categories: string[] = [];
-  categorySelected: String[] = [];
-  skillsSelected:Skill[] = [];
+  categorySelected: string[] = [];
+  skillsSelected: Skill[] = [];
 
-  constructor(private httpClient: HttpClient) {}
+  constructor(
+    private httpClient: HttpClient,
+    private skillService: SkillService
+  ) {}
 
   ngOnInit() {
-    this.httpClient.get('assets/skills.json').subscribe((data) => {
-      const skillsData: any = data;
-      this.skills = skillsData;
-      this.skills.forEach((_skill: Skill) => {
-        if (_skill.category != undefined) {
-          if (!this.categories.includes(_skill.category)) {
-            this.categories.push(_skill.category);
-          }
-        }
-      });
-      this.skillsSelected = this.skills;
-    });
+    // this.httpClient.get('assets/skills.json').subscribe((data) => {
+    //   const skillsData: any = data;
+    //   this.skills = skillsData;
+    //   this.skills.forEach((_skill: Skill) => {
+    //     if (_skill.category != undefined) {
+    //       if (!this.categories.includes(_skill.category)) {
+    //         this.categories.push(_skill.category);
+    //       }
+    //     }
+    //   });
+    //   this.skillsSelected = this.skills;
+    // });
+    this.getSkills();
+
+    this.skillsSelected = this.skills;
+    console.log(this.skills);
   }
 
   setChipSelected(chipValue: string) {
@@ -40,7 +48,7 @@ export class SkillsComponent {
     this.refreshList(this.categorySelected);
   }
 
-  refreshList(categories: String[]) {
+  refreshList(categories: string[]) {
     let refreshList: Skill[] = [];
     this.skills.forEach((_skill: Skill) => {
       if (this.categorySelected.length > 0) {
@@ -54,5 +62,23 @@ export class SkillsComponent {
       }
     });
     this.skillsSelected = refreshList;
+  }
+
+  getSkills() {
+    this.skillService
+      .getSkillsByCategories(this.categorySelected)
+      .then((data) => {
+        data.forEach((_skill: Skill) => {
+          this.skills.push(_skill);
+        });
+        this.skills.forEach((_skill: Skill) => {
+          if (_skill.category != undefined) {
+            if (!this.categories.includes(_skill.category)) {
+              this.categories.push(_skill.category);
+            }
+          }
+        });
+      })
+      .catch((data) => console.log('error !'));
   }
 }

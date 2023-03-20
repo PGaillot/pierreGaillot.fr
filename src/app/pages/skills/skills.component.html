@@ -1,23 +1,28 @@
 <body id="page">
   <div id="header">
-    <h1>Mes compétances</h1>
+    <h1>Mes Compétences</h1>
     <p>
-      La page compétences de mon curriculum-vitae présente mes compétences
-      professionnelles, mes réalisations et mes expériences. Elle met en avant mes
-      connaissances techniques, mes compétences en communication et mes capacités
-      à travailler en équipe. Elle met également en avant mes réalisations passées
-      et les projets sur lesquels j'ai travaillé, ainsi que mes certifications et
-      mes formations.
+      Vous trouverez sur cette page un aperçu de mes compétences diverses et
+      variées, couvrant un large éventail de domaines allant du développement
+      web avec Angular et Java, à la pratique de l'aquarelle. Mon désir
+      d'apprendre de nouvelles choses me pousse à explorer constamment de
+      nouveaux horizons, à la recherche d'opportunités pour acquérir de
+      nouvelles compétences et pour améliorer celles que j'ai déjà acquises.
     </p>
     <mat-chip-listbox selectable multiple class="chip-listbox">
-    <mat-chip-option *ngFor="let category of categories" (click)="setChipSelected(category)">{{category}}</mat-chip-option>
+      <mat-chip-option
+        *ngFor="let category of categories"
+        (click)="setChipSelected(category)"
+        >{{ category }}</mat-chip-option
+      >
     </mat-chip-listbox>
     <mat-divider></mat-divider>
   </div>
 
   <div class="skill-cont">
     <app-skill-item
-      *ngFor="let skill of skillsSelected" [skill]="skill"
+      *ngFor="let skill of skillsSelected"
+      [skill]="skill"
     ></app-skill-item>
   </div>
 </body>
