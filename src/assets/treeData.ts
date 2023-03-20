@@ -1,4 +1,4 @@
-import { TreeNode } from './treeNode';
+import { TreeNode } from '../assets/TreeNode'
 
 export const EXP_TREE_DATA: TreeNode[] = [
   {
