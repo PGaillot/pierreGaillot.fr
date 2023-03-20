@@ -25,7 +25,7 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatTreeModule} from '@angular/material/tree'; 
 
 // Light Gallery
-import {  } from 'lightgallery/angular';
+import { LightgalleryModule } from 'lightgallery/angular';
 
 
 
