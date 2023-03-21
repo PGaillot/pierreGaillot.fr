@@ -22,20 +22,20 @@
       </div>
       <div class="more-info"></div>
     </div>
-    <!-- <button mat-button color="primary">en savoir plus ...</button> -->
 
     <div
       class="project-screenshots-cont"
       *ngIf="project.screenshots != undefined"
     >
-      <h2>screenshots :</h2>
-      <!-- 
+      <h2>images :</h2>
+      
     <lightgallery [settings]="settings" [onBeforeSlide]="onBeforeSlide">
       
-      <a *ngFor="let screenshot of project.screenshots" [href]="screenshot">
-          <img alt="img1" [src]="screenshot" />
+      <a *ngFor="let screenshot of project.screenshots; let index = index" [href]="screenshot">
+          <img [alt]="project.displayName + ' image ' + (index+1)" [src]="getImgurThumbnails(screenshot)" />
       </a>
-    </lightgallery> -->
+    </lightgallery>
+
     </div>
 
     <button

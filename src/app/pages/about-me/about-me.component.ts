@@ -8,7 +8,7 @@ import {
 import { DomSanitizer } from '@angular/platform-browser';
 import { Chart, registerables } from 'chart.js';
 import * as EXP from 'src/assets/treeData'
-import { TreeNode, ExperienceFlatNode } from 'src/assets/treeNode';
+import { TreeNode, ExperienceFlatNode } from '../../../assets/TreeNode';
 
 Chart.register(...registerables);
 

@@ -29,6 +29,15 @@ export class ProjectComponent {
   project: Project = new Project();
   projectId: any;
 
+  settings = {
+    counter: false,
+    plugins: [lgZoom],
+};
+onBeforeSlide = (detail: BeforeSlideDetail): void => {
+    const { index, prevIndex } = detail;
+    console.log(index, prevIndex);
+};
+
   ngOnInit(): void {
     this.projectId = this.activatedRoute.snapshot.paramMap.get('projectId');
     this.projectService
@@ -60,6 +69,13 @@ export class ProjectComponent {
     console.log(skill.displayName)
   }
 
+  getImgurThumbnails(imgUrl:string){
+   const imgFormat:string =  imgUrl.slice(-4);
+   const rawImgLink:string = imgUrl.slice(0, (imgUrl.length - imgFormat.length));
+   const newImgLink:string = rawImgLink + "t" + imgFormat;
+   return newImgLink
+  }
+
   getSkillsCategory() {
     this.skills.forEach((skill) => {
       if (skill.category != undefined) {
@@ -75,5 +91,9 @@ export class ProjectComponent {
       if (skill.category === category) categorySkills.push(skill);
     });
     return categorySkills;
+  }
+
+  getDelaultImageName(project:Project){
+    return  "screenshot " + project.displayName;
   }
 }
