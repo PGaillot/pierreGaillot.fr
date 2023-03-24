@@ -2,60 +2,100 @@
   {
     "id": 1,
     "displayName": "sur mesure",
-    "iconUrl":"./assets/icons/sur-mesure-icon.svg",
-    "motivation":"PROFESSIONAL",
-    "description": "une application android et ios.In volutpat erat justo, in laoreet leo viverra in. Sed eu mi at neque auctor ultricies a dapibus nisl. Donec aliquet euismod leo, sit amet elementum purus efficitur vel. Proin varius augue diam, eu commodo ex accumsan id. Praesent vestibulum scelerisque elit, fermentum vulputate elit convallis id. Donec posuere interdum magna in pulvinar. Donec id placerat turpis. Maecenas dictum, lorem id pellentesque ullamcorper, mauris massa aliquet sapien, sit amet pulvinar metus dolor et enim. Sed sed ipsum nec arcu congue bibendum eu non massa. Curabitur id lorem eros. ",
+    "iconUrl": "./assets/icons/sur-mesure-icon.svg",
+    "motivation": "PROFESSIONAL",
+    "description": "Sur Mesure est un projet d'application mobile ayant pour objectif de contacter des personnes éloignées de l'emploi et leur proposer des solutions adaptées à leurs besoins et problématiques, que ce soit pour reprendre un emploi ou suivre une formation. J'ai tout d'abord participé à la création de l'identité visuelle du projet, puis j'ai réalisé les premières maquettes de l'application. Étant curieux de savoir si celles-ci étaient réalisables et vu la simplicité du projet qui consistait en un simple questionnaire, j'ai décidé de m'immiscer dans le développement de l'application. Avec l'aide de mes collègues, j'ai pu réaliser la première version de Sur Mesure sur Android. J'ai utilisé les outils tels que Ionic, Firebase, Material Design et Lottie pour suivre toutes les étapes de développement, depuis le premier brief jusqu'à la mise en ligne sur le Play Store (et plus tard sur l'App Store).",
     "imgUrl": "./assets/img/projects/sur-mesure-mockup.png",
     "gitUrl": "https://github.com/LevelUpCluster/sur-mesure-app",
     "skillsId": [0, 7, 5],
     "screenshots": [
-      "https://i.imgur.com/r9XNbOQ.jpg",
-      "https://i.imgur.com/Paqrz5J.jpg"
+      "https://imgur.com/0woSwUR.jpg",
+      "https://imgur.com/NJmzXN8.jpg",
+      "https://imgur.com/ilB2zul.jpg",
+      "https://imgur.com/2Ai9hWi.jpg",
+      "https://imgur.com/0L9d900.jpg"
     ]
   },
 
   {
     "id": 2,
     "displayName": "Sutom-Master",
-    "motivation":"PERSONAL",
-    "description": "une bot discord qui compte et fait des classements de mes colègues",
-    "imgUrl": "https://this-person-does-not-exist.com/img/avatar-11ab00b25f22ad77edee40e6c9bdfdb3.jpg",
-    "skillsId": [2, 5]
+    "motivation": "PERSONAL",
+    "description": "Avec des ami(e)s et des collègues, nous avons l'habitude de jouer au Sutom. Si vous ne connaissez pas le Sutom, c'est un jeu en ligne de type Motus dans lequel tout le monde doit découvrir un mot avec le moins d'essais possible, et chaque jour le mot change. Nous partageons souvent nos performances sur un canal Discord dédié où chacun clame haut et fort qu'il est le meilleur ! C'est là que m'est venue l'idée : si je crée un bot qui compte les scores de chacun, il pourrait nous dire qui est le meilleur chaque mois et qui a réalisé le meilleur score cette semaine. C'est ainsi qu'est né ce projet, et c'est exactement ce qu'il fait aujourd'hui, avec quelques fonctionnalités que je vous laisse découvrir. J'ai développé ce bot en Java, en utilisant l'API Java de Discord (JDA). La base de données a été développée par un ami en PHP avec Symfony.",
+    "imgUrl": "https://i.notretemps.com/1800x0/smart/2019/10/28/thierry-beccaro-jai-choisi-le-sourire-et-la-vie.jpg",
+    "gitUrl":"https://github.com/PierreGaillot/sutom-master",
+    "skillsId": [2, 5],
+    "screenshots":[
+      "https://imgur.com/XDg3s37.jpg",
+      "https://imgur.com/MTjBWLV.jpg", 
+      "https://imgur.com/ipS9uk6.jpg"
+  ]
   },
 
   {
     "id": 3,
     "displayName": "Médiatio",
-    "motivation":"PROFESSIONAL",
-    "iconUrl":"./assets/icons/mediatio-icon.png",
-    "description": "une bot discord qui compte et fait des classements de mes colègues",
+    "motivation": "PROFESSIONAL",
+    "iconUrl": "./assets/icons/mediatio-icon.png",
+    "description": "Mediatio est un projet d'application mobile imaginé chez LevelUp Cluster. Son objectif est de mettre en relation des personnes éloignées du numérique avec des conseillers numériques proches d'eux, en utilisant un chat pour répondre à leurs questions et en leur proposant de participer à des ateliers. Par exemple, les aider à remplir leur déclaration d'impôt en ligne ou à envoyer un e-mail. J'ai réalisé toutes les maquettes et prototypes de ce projet sur Figma, ainsi que sa charte graphique.",
     "imgUrl": "./assets/img/projects/mediatio.png",
-    "skillsId": [0]
+    "skillsId": [0],
+    "screenshots":[
+      "https://imgur.com/x0XotVF.jpg", 
+      "https://imgur.com/bayZKSl.jpg", 
+      "https://imgur.com/neTXoNo.jpg", 
+      "https://imgur.com/361Grz1.jpg" 
+  ]
   },
 
   {
     "id": 4,
     "displayName": "The Trap Test",
-    "motivation":"PERSONAL",
-    "description": "The Trap Test est un jeu que j'ai réalisé sur Unreal engine durant mon temps libre. ça parle de ...",
+    "motivation": "PERSONAL",
+    "description": "J'aime comprendre le fonctionnement des choses, et bien avant de me lancer dans le développement, je me suis souvent demandé comment fonctionnait un jeu vidéo. Qu'arrive-t-il réellement lorsque l'on ramasse un objet ou que l'on ouvre notre inventaire ? Ce sont des questions essentielles qui méritent des réponses. C'est pourquoi j'ai commencé par installer Unity, un moteur de jeu gratuit sur lequel de nombreux jeux de renom ont été développés, et j'ai commencé à coder de petites choses en C++. Au fil du temps, j'ai voulu créer mon propre petit jeu afin de mieux comprendre leur fonctionnement. Mon ambition n'était pas de sortir et de révolutionner le monde des jeux vidéo, mais plutôt de m'entraîner à mieux comprendre leur fonctionnement. Pour cela, j'ai eu besoin de plusieurs choses : un moteur de jeu (j'ai finalement opté pour Unreal Engine, qui était plus simple à prendre en main), un style de plateformer 2D en pixel, des assets pour gagner du temps sur les graphismes (mon personnage, ses animations, les objets qu'il ramasse), une histoire et un univers, de la musique, mais surtout de l'organisation. J'ai créé tous les éléments graphiques sur Photoshop, le code (après de multiples refontes) a été géré avec Unreal Engine, et les recherches et l'organisation sur Miro. Ce projet a été réalisé sur le long terme, mais grâce à mon acharnement, j'ai finalement réussi à faire ce que je voulais. Mon jeu raconte l'histoire d'un jeune Aztèque qui travaille comme testeur de pièges dans un temple.",
     "imgUrl": "./assets/img/projects/TTT.png",
-    "skillsId": [8, 3]
+    "skillsId": [8, 3, 9],
+    "screenshots":[
+      "https://imgur.com/4xtsAFu.gif",
+      "https://imgur.com/zx58sfV.gif",
+      "https://imgur.com/jAPoNG3.gif",
+      "https://imgur.com/HLM0p4m.gif",
+      "https://imgur.com/hasy4ZU.gif",
+      "https://imgur.com/GLAHdOS.jpg"
+  ]
   },
 
   {
     "id": 5,
     "displayName": "Go4Lunch",
-    "motivation":"FORMATION",
-    "description": "The Trap Test est un jeu que j'ai réalisé sur Unreal engine durant mon temps libre. ça parle de ...",
-    "imgUrl": "./assets/img/projects/TTT.png",
+    "motivation": "FORMATION",
+    "description": "Dans le cadre de ma formation de développeur d'applications Android, j'ai créé plusieurs applications pour m'exercer, dont Go4Lunch, qui est un excellent exemple de mon travail. L'objectif de cette application est de permettre aux employés d'une même entreprise de s'informer sur les lieux où ils peuvent déjeuner afin d'organiser leur temps de manière plus efficace.J'ai développé l'ensemble de l'application en utilisant le langage de programmation Java, ainsi que les API de Google, notamment Google Place et Google Maps. J'ai également utilisé les services de Firebase pour l'authentification des utilisateurs et le stockage des données.",
+    "imgUrl": "https://i.imgur.com/HlOskof.png",
     "skillsId": [8, 3, 9]
   },
   {
     "id": 6,
     "displayName": "Peintures & dessins",
-    "motivation":"PERSONAL",
+    "motivation": "PERSONAL",
+    "description": "Comme vous avez peut-être pu le constater sur ce site, j'ai suivi des études dans les domaines de l'art, du graphisme et de la mise en page. Je suis passionné par la création et l'imagination, et j'aime concrétiser mes idées en les matérialisant. Cela commence souvent par la réalisation d'un croquis, d'un petit dessin ou même d'une aquarelle.",
+    "imgUrl": "https://i.redd.it/3d46mrwwba901.png",
+    "screenshots": [
+      "https://i.imgur.com/nz55WgO.png",
+      "https://i.imgur.com/GoM7Y8U.png",
+      "https://i.imgur.com/r9XNbOQ.jpg",
+      "https://i.imgur.com/QcBJ69e.jpg",
+      "https://i.imgur.com/5ZrVIUX.jpg",
+      "https://i.imgur.com/edjlmXc.jpg",
+      "https://i.imgur.com/iqgvp2m.jpg"
+    ]
+  },
+  {
+    "id": 7,
+    "displayName": "Urabanesse AR",
+    "motivation": "PROFESSIONAL",
     "description": "une application android et ios.",
     "imgUrl": "./assets/img/projects/sur-mesure-mockup.png",
+    "skillsId": [8],
     "screenshots": [
       "https://i.imgur.com/r9XNbOQ.jpg",
       "https://i.imgur.com/Paqrz5J.jpg"
