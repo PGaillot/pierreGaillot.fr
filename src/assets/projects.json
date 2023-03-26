@@ -71,7 +71,7 @@
     "motivation": "FORMATION",
     "description": "Dans le cadre de ma formation de développeur d'applications Android, j'ai créé plusieurs applications pour m'exercer, dont Go4Lunch, qui est un excellent exemple de mon travail. L'objectif de cette application est de permettre aux employés d'une même entreprise de s'informer sur les lieux où ils peuvent déjeuner afin d'organiser leur temps de manière plus efficace.J'ai développé l'ensemble de l'application en utilisant le langage de programmation Java, ainsi que les API de Google, notamment Google Place et Google Maps. J'ai également utilisé les services de Firebase pour l'authentification des utilisateurs et le stockage des données.",
     "imgUrl": "https://i.imgur.com/HlOskof.png",
-    "skillsId": [8, 3, 9]
+    "skillsId": [2, 3, 9]
   },
   {
     "id": 6,
@@ -93,9 +93,33 @@
     "id": 7,
     "displayName": "Urabanesse AR",
     "motivation": "PROFESSIONAL",
-    "description": "une application android et ios.",
+    "description": "Le projet Urbanesse a été développé conjointement par Essteam et LevelUp Cluster. Urbanesse est un jeu de plateau où les habitants d'un quartier collaborent pour trouver la meilleure solution pour réhabiliter un lieu. Les joueurs placent des tuiles représentant des éléments de mobilier urbain sur le plateau de jeu. Au début du projet, j'étais impliqué en tant que graphiste et j'ai participé à la réalisation de certains visuels, y compris le logo. J'ai ensuite eu l'idée d'améliorer l'expérience de jeu en rendant le plateau de jeu plus interactif grâce à la réalité augmentée. L'idée était de faire apparaître en réalité augmentée des informations ainsi qu’un model 3d de l’élément vidée sur chaque élément de tuile. J'ai travaillé sur ce projet pendant quelques semaines et j'ai réussi à réaliser un prototype convaincant. Cependant, la qualité de la caméra des téléphones utilisés et la puissance de calcul limitaient la capacité à afficher suffisamment d'éléments sur le plateau de jeu simultanément.",
     "imgUrl": "./assets/img/projects/sur-mesure-mockup.png",
     "skillsId": [8],
+    "screenshots": [
+      "https://i.imgur.com/r9XNbOQ.jpg",
+      "https://i.imgur.com/Paqrz5J.jpg"
+    ]
+  },
+  {
+    "id": 8,
+    "displayName": "PierreGaillot.fr",
+    "motivation": "PERSONAL",
+    "description": "J'ai souhaité refaire mon CV afin de mieux communiquer mes compétences en tant que développeur front-end. Pour ce faire, j'ai décidé de le refaire entièrement avec Angular, permettant ainsi une navigation rapide et simple vers les projets et compétences qui vous intéressent. Le code du CV est disponible sur GitHub.",
+    "imgUrl": "./assets/img/projects/sur-mesure-mockup.png",
+    "skillsId": [6,5],
+    "screenshots": [
+      "https://i.imgur.com/r9XNbOQ.jpg",
+      "https://i.imgur.com/Paqrz5J.jpg"
+    ]
+  },
+  {
+    "id": 9,
+    "displayName": "CSC 2.0",
+    "motivation": "PROFESSIONAL",
+    "description": "une application android et ios.",
+    "imgUrl": "./assets/img/projects/sur-mesure-mockup.png",
+    "skillsId": [1,6,5],
     "screenshots": [
       "https://i.imgur.com/r9XNbOQ.jpg",
       "https://i.imgur.com/Paqrz5J.jpg"
