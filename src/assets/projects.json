@@ -79,6 +79,7 @@
     "motivation": "PERSONAL",
     "description": "Comme vous avez peut-être pu le constater sur ce site, j'ai suivi des études dans les domaines de l'art, du graphisme et de la mise en page. Je suis passionné par la création et l'imagination, et j'aime concrétiser mes idées en les matérialisant. Cela commence souvent par la réalisation d'un croquis, d'un petit dessin ou même d'une aquarelle.",
     "imgUrl": "https://i.redd.it/3d46mrwwba901.png",
+    "skillsId":[3],
     "screenshots": [
       "https://i.imgur.com/nz55WgO.png",
       "https://i.imgur.com/GoM7Y8U.png",
@@ -94,11 +95,15 @@
     "displayName": "Urabanesse AR",
     "motivation": "PROFESSIONAL",
     "description": "Le projet Urbanesse a été développé conjointement par Essteam et LevelUp Cluster. Urbanesse est un jeu de plateau où les habitants d'un quartier collaborent pour trouver la meilleure solution pour réhabiliter un lieu. Les joueurs placent des tuiles représentant des éléments de mobilier urbain sur le plateau de jeu. Au début du projet, j'étais impliqué en tant que graphiste et j'ai participé à la réalisation de certains visuels, y compris le logo. J'ai ensuite eu l'idée d'améliorer l'expérience de jeu en rendant le plateau de jeu plus interactif grâce à la réalité augmentée. L'idée était de faire apparaître en réalité augmentée des informations ainsi qu’un model 3d de l’élément vidée sur chaque élément de tuile. J'ai travaillé sur ce projet pendant quelques semaines et j'ai réussi à réaliser un prototype convaincant. Cependant, la qualité de la caméra des téléphones utilisés et la puissance de calcul limitaient la capacité à afficher suffisamment d'éléments sur le plateau de jeu simultanément.",
-    "imgUrl": "./assets/img/projects/sur-mesure-mockup.png",
+    "imgUrl": "https://imgur.com/dIXywgP.jpg",
     "skillsId": [8],
     "screenshots": [
-      "https://i.imgur.com/r9XNbOQ.jpg",
-      "https://i.imgur.com/Paqrz5J.jpg"
+      "https://imgur.com/dIXywgP.jpg",
+      "https://imgur.com/wU2f2gn.jpg",
+      "https://imgur.com/CdNPlaG.jpg",
+      "https://imgur.com/eso5HuN.jpg",
+      "https://imgur.com/ojvHwyd.jpg",
+      "https://imgur.com/TWAr6hE.jpg"
     ]
   },
   {
@@ -117,12 +122,27 @@
     "id": 9,
     "displayName": "CSC 2.0",
     "motivation": "PROFESSIONAL",
-    "description": "une application android et ios.",
-    "imgUrl": "./assets/img/projects/sur-mesure-mockup.png",
-    "skillsId": [1,6,5],
+    "description": "Le projet CSC 2.0 a pour objectif de simplifier l'accueil et la gestion des ateliers dans les centres sociaux connectés. Les adhérents peuvent se connecter avec une carte à une borne située dans le centre social et s'inscrire, ainsi que d'autres membres de leur foyer, aux activités prévues. L'application comprend un back-office pour l'administration permettant de gérer les inscriptions des utilisateurs et la gestion des ateliers. J'ai réalisé les maquettes et prototypes du projet en collaboration avec les centres sociaux, grâce à Figma. Ensuite, le développement du projet front-end a été réalisé avec Angular et Material Design, tandis qu'un collègue a développé la base de données en PHP avec Symfony.",
+    "imgUrl": "https://imgur.com/QOJXddl.jpg",
+    "skillsId": [0,6,5],
     "screenshots": [
-      "https://i.imgur.com/r9XNbOQ.jpg",
-      "https://i.imgur.com/Paqrz5J.jpg"
+      "https://imgur.com/sZJS9Tz.jpg",
+      "https://imgur.com/QOJXddl.jpg"
+    ]
+  },
+  {
+    "id": 10,
+    "displayName": "Revient",
+    "motivation": "PERSONAL",
+    "description": "Revient est un projet personnel que je développe depuis un certain temps, dans le but de m'améliorer dans le développement d'applications Android. Il est développé grâce à Android Studio et utilise les services de Firebase pour répondre à une problématique de la vie quotidienne. Il m'arrive souvent de prêter un objet à une personne et d'oublier à qui je l'ai prêté. Personne n'aime rappeler à quelqu'un qu'il doit rendre un objet qui lui a été prêté. C'est pourquoi cette application a été créée pour permettre aux utilisateurs de se connecter, d'ajouter des objets à leur collection, de les prêter à d'autres utilisateurs, d'être informés quand un objet doit être rendu prochainement, et de relancer la personne à qui l'objet a été prêté avec une notification. Bien sûr, Revient pourrait offrir bien d'autres fonctionnalités, mais l'application est encore en développement !",
+    "imgUrl": "https://imgur.com/E6Hj855.jpg",
+    "skillsId": [0,2,5],
+    "screenshots": [
+      "https://imgur.com/NmbN3jp.jpg",
+      "https://imgur.com/A0ID49E.jpg",      
+      "https://imgur.com/X14aZta.jpg",
+      "https://imgur.com/Pgu76ik.jpg",
+      "https://imgur.com/RnKOG0I.jpg"
     ]
   }
 ]

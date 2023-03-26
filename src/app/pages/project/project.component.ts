@@ -72,7 +72,7 @@ onBeforeSlide = (detail: BeforeSlideDetail): void => {
   getImgurThumbnails(imgUrl:string){
    const imgFormat:string =  imgUrl.slice(-4);
    const rawImgLink:string = imgUrl.slice(0, (imgUrl.length - imgFormat.length));
-   const newImgLink:string = rawImgLink + "t" + imgFormat;
+   const newImgLink:string = rawImgLink + "s" + imgFormat;
    return newImgLink
   }
 

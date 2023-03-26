@@ -1,5 +1,5 @@
-@import url('https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.4/css/lightgallery.css');
-@import url('https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.4/css/lg-zoom.css');
+@import url("https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.4/css/lightgallery.css");
+@import url("https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.4/css/lg-zoom.css");
 
 body {
   display: flex;
@@ -47,7 +47,6 @@ body {
   max-height: 25em;
 }
 
-
 .skills-category-cont {
   min-width: 100%;
   display: flex;
@@ -55,7 +54,6 @@ body {
   justify-content: start;
   gap: 0.5em;
   padding: 1em;
-
 }
 
 .skill-cont {
@@ -64,7 +62,16 @@ body {
   gap: 0.5em;
   flex-wrap: wrap;
 
-  mat-chip{
+  mat-chip {
     background-color: none;
+  }
+}
+
+.project-screenshots-cont {
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 1em;
+  padding: 1em;
+  a {
+    padding: 1em 0.5em 1em 0;
   }
 }
