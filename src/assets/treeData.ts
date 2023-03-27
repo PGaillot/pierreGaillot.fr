@@ -51,10 +51,13 @@ export const STUDIES_TREE_DATA: TreeNode[] = [
   {
     name: `Développeur d'application - Android`,
     children: [
-      {
-        name: `Formation réalisée au cours de mon experience chez levelUp-cluster en 2022`,
-        // TODO detailler la formation
-      },
+      {name:`• Les bases de la programmation en Java et la création d'une première application Android.`,},
+      {name:`• Comment créer des interfaces utilisateurs avec les différents éléments d'interface proposés par Android, gérer les événements et les animations.`},
+      {name:`• À stocker des données dans une base de données locale, à utiliser les préférences partagées et à interagir avec les fichiers.`},
+      {name:`• Les concepts clés de la programmation orientée objet en Java dans le module "Programmation orientée objet".`},
+      {name:`• À communiquer avec des services web, à utiliser les protocoles REST et SOAP et à analyser des données JSON.`},
+      {name:`• Comment utiliser les API de géolocalisation et les cartes dans vos applications.`},
+      {name:`• À publier mon application sur le Google Play Store et à gérer les mises à jour.`},
     ],
   },
   {
@@ -67,12 +70,14 @@ export const STUDIES_TREE_DATA: TreeNode[] = [
   },
   {
     name: `1ère & 2ème année ESAC`,
-    children: [{ name: `(ÉCOLE SUPÉRIEURE D’ARTS DE CAMBRAI)   (59)` }],
+    children: [
+      { name: `École Supérieur d'art de Cambrai - Cambrai (59)` }
+    ],
   },
   {
     name: `1ERE année ESBA`,
     children: [
-      { name: `/ (ÉCOLE SUPÉRIEURE DES BEAUX ARTS) VALENCIENNES (59)` },
+      { name: `École Supérieur des Beaux Arts - Valenciennes (59)` },
     ],
   },
   {

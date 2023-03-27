@@ -61,17 +61,21 @@
   background-position: center;
 }
 
+.passions{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
 
 #divChart{
   padding: 1em 0;
-  display: block;
-  min-width: 350px;
-  min-height: 350px;
+  width: 350px;
+  height: 350px;
 }
 
 @media (min-width: 768px){
   #divChart{
-    display: block;
     min-width: 350px;
     min-height: 350px;
     max-width: 450px;
