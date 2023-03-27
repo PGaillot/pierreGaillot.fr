@@ -1,5 +1,5 @@
 <body id="page">
-  <div class="header">
+  <div id="header" class="header">
     <img *ngIf="project.iconUrl != undefined" [src]="project.iconUrl" alt="" />
     <div class="title-cont">
       <h1>{{ project.displayName | uppercase }}</h1>
@@ -27,7 +27,7 @@
       class="project-screenshots-cont"
       *ngIf="project.screenshots != undefined"
     >
-      <h2>images :</h2>
+      <h2>{{project.displayName}} en images :</h2>
       
     <lightgallery [settings]="settings" [onBeforeSlide]="onBeforeSlide">
       

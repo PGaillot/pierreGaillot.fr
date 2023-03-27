@@ -20,18 +20,6 @@ export class SkillsComponent {
   ) {}
 
   ngOnInit() {
-    // this.httpClient.get('assets/skills.json').subscribe((data) => {
-    //   const skillsData: any = data;
-    //   this.skills = skillsData;
-    //   this.skills.forEach((_skill: Skill) => {
-    //     if (_skill.category != undefined) {
-    //       if (!this.categories.includes(_skill.category)) {
-    //         this.categories.push(_skill.category);
-    //       }
-    //     }
-    //   });
-    //   this.skillsSelected = this.skills;
-    // });
     this.getSkills();
 
     this.skillsSelected = this.skills;

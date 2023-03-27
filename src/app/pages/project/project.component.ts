@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { MatSnackBar } from '@angular/material/snack-bar';
-import { ActivatedRoute } from '@angular/router';
+import { MatSnackBar, MatSnackBarLabel } from '@angular/material/snack-bar';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { BeforeSlideDetail } from 'lightgallery/lg-events';
 import { Project } from 'src/app/models/project';
 import { Skill } from 'src/app/models/skill';
@@ -23,7 +23,8 @@ export class ProjectComponent {
     private activatedRoute: ActivatedRoute,
     private projectService: ProjectService,
     private skillService: SkillService,
-    private matSnackBar:MatSnackBar,
+    private matSnackBar: MatSnackBar,
+    private router: Router
   ) {}
 
   project: Project = new Project();
@@ -32,11 +33,11 @@ export class ProjectComponent {
   settings = {
     counter: false,
     plugins: [lgZoom],
-};
-onBeforeSlide = (detail: BeforeSlideDetail): void => {
+  };
+  onBeforeSlide = (detail: BeforeSlideDetail): void => {
     const { index, prevIndex } = detail;
     console.log(index, prevIndex);
-};
+  };
 
   ngOnInit(): void {
     this.projectId = this.activatedRoute.snapshot.paramMap.get('projectId');
@@ -61,19 +62,29 @@ onBeforeSlide = (detail: BeforeSlideDetail): void => {
     window.open(this.project.gitUrl, '_blank');
   }
 
-  onChipClick(skill:Skill){
-    
-    this.matSnackBar.open(("Voulsez vous ouvir les projets " + skill.displayName + " ?"), "ouvrir" , {
-      duration :2500
+  onChipClick(skill: Skill) {
+    let sb = this.matSnackBar.open(
+      'Voulez-vous ouvir les projets ' + skill.displayName + ' ?',
+      'ouvrir',
+      {
+        duration: 2500,
+      }
+    );
+
+    sb.afterDismissed().subscribe(null, null, () => {
+      this.router.navigate(['/skillProjects/' + skill.id], {}); 
     });
-    console.log(skill.displayName)
   }
 
-  getImgurThumbnails(imgUrl:string){
-   const imgFormat:string =  imgUrl.slice(-4);
-   const rawImgLink:string = imgUrl.slice(0, (imgUrl.length - imgFormat.length));
-   const newImgLink:string = rawImgLink + "s" + imgFormat;
-   return newImgLink
+
+  getImgurThumbnails(imgUrl: string) {
+    const imgFormat: string = imgUrl.slice(-4);
+    const rawImgLink: string = imgUrl.slice(
+      0,
+      imgUrl.length - imgFormat.length
+    );
+    const newImgLink: string = rawImgLink + 's' + imgFormat;
+    return newImgLink;
   }
 
   getSkillsCategory() {
@@ -93,7 +104,7 @@ onBeforeSlide = (detail: BeforeSlideDetail): void => {
     return categorySkills;
   }
 
-  getDelaultImageName(project:Project){
-    return  "screenshot " + project.displayName;
+  getDelaultImageName(project: Project) {
+    return 'screenshot ' + project.displayName;
   }
 }

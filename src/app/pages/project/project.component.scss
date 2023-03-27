@@ -70,8 +70,20 @@ body {
 .project-screenshots-cont {
   border: 1px solid rgb(219, 219, 219);
   border-radius: 1em;
+  margin: 2em 0;
   padding: 1em;
   a {
     padding: 1em 0.5em 1em 0;
+
+    img{
+      background-color: #7a17177c;
+        border: 1px solid rgb(219, 219, 219);
+    }
+  }
+}
+
+@media (min-width: 768px){
+  .cont{
+    padding: 2em 12em;
   }
 }
