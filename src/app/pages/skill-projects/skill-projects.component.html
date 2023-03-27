@@ -1,15 +1,14 @@
 <body id="page">
   <div id="header">
-    <h1>{{ skill.displayName }}</h1>
+    <div class="title-row">
+      <img class="skill-icon" [src]="skill.iconUrl" alt="" />
+      <h1>{{ skill.displayName | uppercase }}</h1>
+    </div>
     <p>{{ skill.description }}</p>
     <mat-divider></mat-divider>
   </div>
   <div>
     <ng-container *ngIf="projects.length > 0; else noProject">
-      <h2>
-        Voici une liste de projets que j'ai réalisé avec
-        {{ skill.displayName | titlecase }}
-      </h2>
       <div class="projects-cont">
         <app-project-card
           *ngFor="let project of projects"
