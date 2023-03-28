@@ -9,6 +9,8 @@ import { AboutMeComponent } from './pages/about-me/about-me.component';
 import { SkillsComponent } from './pages/skills/skills.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+
 
 
 // MatComponent
@@ -61,7 +63,7 @@ import { LightgalleryModule } from 'lightgallery/angular';
     MatTreeModule,
 
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
