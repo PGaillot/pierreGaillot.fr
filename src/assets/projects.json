@@ -111,11 +111,10 @@
     "displayName": "PierreGaillot.fr",
     "motivation": "PERSONAL",
     "description": "J'ai souhaité refaire mon CV afin de mieux communiquer mes compétences en tant que développeur front-end. Pour ce faire, j'ai décidé de le refaire entièrement avec Angular, permettant ainsi une navigation rapide et simple vers les projets et compétences qui vous intéressent. Le code du CV est disponible sur GitHub.",
-    "imgUrl": "./assets/img/projects/sur-mesure-mockup.png",
+    "imgUrl": "https://imgur.com/WUwTtZQ.jpg",
     "skillsId": [6,5],
     "screenshots": [
-      "https://i.imgur.com/r9XNbOQ.jpg",
-      "https://i.imgur.com/Paqrz5J.jpg"
+      "https://imgur.com/WUwTtZQ.jpg"
     ]
   },
   {

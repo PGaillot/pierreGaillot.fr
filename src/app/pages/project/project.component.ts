@@ -36,7 +36,6 @@ export class ProjectComponent {
   };
   onBeforeSlide = (detail: BeforeSlideDetail): void => {
     const { index, prevIndex } = detail;
-    console.log(index, prevIndex);
   };
 
   ngOnInit(): void {

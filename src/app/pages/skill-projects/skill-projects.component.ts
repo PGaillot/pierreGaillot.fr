@@ -35,7 +35,6 @@ export class SkillProjectsComponent {
     let skillsId:number[] = [this.skillId];
     this.projectService.getProjectsBySkill(skillsId).then((projects:Project[]) => {
     this.projects = projects;
-    console.log(projects)
     })
   }
 }

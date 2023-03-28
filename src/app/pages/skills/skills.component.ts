@@ -23,7 +23,6 @@ export class SkillsComponent {
     this.getSkills();
 
     this.skillsSelected = this.skills;
-    console.log(this.skills);
   }
 
   setChipSelected(chipValue: string) {
