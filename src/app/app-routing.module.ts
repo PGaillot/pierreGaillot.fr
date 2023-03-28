@@ -13,6 +13,7 @@ const routes: Routes = [
   { path: 'skills', component: SkillsComponent, data: { animation: 'SkillsPage' } },
   {path:'project/:projectId', component: ProjectComponent, data:{animation:'ProjectPage'}},
   {path:'skillProjects/:skillId', component: SkillProjectsComponent, data:{animation:'ProjectPage'}},
+  {path: '**',pathMatch: 'full', redirectTo: '/about-me'}
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
