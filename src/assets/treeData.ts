@@ -1,27 +1,16 @@
 import { TreeNode } from '../assets/TreeNode'
 
 export const EXP_TREE_DATA: TreeNode[] = [
+
   {
-    name: `2012 / Intervenant Graphisme`,
-    children: [
-      {
-        name: `Création d'ateliers de découverte du graphisme pour les élèves de 3ème et 6ème - Collège Charles de Foucault, Albert.`,
-      },
-    ],
+    name: `2021 - 2023 / Développeur front end`,
+    children: [{ name: `Réalisation d'applications mobiles et web - Level Up cluster, Tourcoing.` }],
   },
   {
-    name: `2013 - 2014 / Création de mon entreprise de communication`,
+    name: `2018 - 2019 / Moniteur d'atelier`,
     children: [
       {
-        name: `Réalisation de projets visuels (chartes graphiques, logos, livrets, flyers...) pour des professionnels (PME, associations, collectivités...) - 1001 Pages.`,
-      },
-    ],
-  },
-  {
-    name: `2015 / Référent Art`,
-    children: [
-      {
-        name: `Enseignement de cours d'art aux enfants de 6 à 12 ans - Lille Université Club (LUC), Lille.`,
+        name: `Encadrement d'un atelier d'imprimerie composé 8 personnes - ESAT de l'association des Paralysés de France, Rivery.`,
       },
     ],
   },
@@ -34,18 +23,32 @@ export const EXP_TREE_DATA: TreeNode[] = [
     ],
   },
   {
-    name: `2018 - 2019 / Moniteur d'atelier`,
+    name: `2015 / Référent Art`,
     children: [
       {
-        name: `Encadrement d'un atelier d'imprimerie composé 8 personnes - ESAT de l'association des Paralysés de France, Rivery.`,
+        name: `Enseignement de cours d'art aux enfants de 6 à 12 ans - Lille Université Club (LUC), Lille.`,
       },
     ],
   },
   {
-    name: `2021 - 2023 / Développeur front end`,
-    children: [{ name: `Réalisation d'applications mobiles et web - Level Up cluster, Tourcoing.` }],
+    name: `2013 - 2014 / Création de mon entreprise de communication`,
+    children: [
+      {
+        name: `Réalisation de projets visuels (chartes graphiques, logos, livrets, flyers...) pour des professionnels (PME, associations, collectivités...) - 1001 Pages.`,
+      },
+    ],
   },
+  {
+    name: `2012 / Intervenant Graphisme`,
+    children: [
+      {
+        name: `Création d'ateliers de découverte du graphisme pour les élèves de 3ème et 6ème - Collège Charles de Foucault, Albert.`,
+      },
+    ],
+  }
 ];
+
+
 
 export const STUDIES_TREE_DATA: TreeNode[] = [
   {
