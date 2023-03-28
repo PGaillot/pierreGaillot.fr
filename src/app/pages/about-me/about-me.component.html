@@ -21,8 +21,9 @@
     <div class="content-block">
       <h2><mat-icon>hiking</mat-icon> mon parcours</h2>
       <p class="intro">
-        Voici un aperçu de mes différentes expériences professionnelles, grâce auxquelles je suis désormais développeur
-        front-end (avec quelques casquettes supplémentaires).
+        Voici un aperçu de mes différentes expériences professionnelles, grâce
+        auxquelles je suis désormais développeur front-end (avec quelques
+        casquettes supplémentaires).
       </p>
       <mat-tree [dataSource]="expDataSource" [treeControl]="treeControl">
         <mat-tree-node *matTreeNodeDef="let node" matTreeNodePadding>
@@ -54,14 +55,18 @@
     <div class="content-block">
       <h2><mat-icon>school</mat-icon> mes études</h2>
       <p class="intro">
-        J'ai d'abord réalisé des études en communication graphique et
-        conception artistique, avant d'apprendre en autodidacte (dans un premier temps) le développement web et mobile. En explorant les différentes ressources pédagogiques en ligne, j'ai
-        acquis des compétences en code, langages et technologies pour créer des
-        applications web et mobiles performantes. J'ai ensuite réalisé une formation de Développeur d'applications android, qui m'a permis d'approndir mes connaissances. Mes formations en
-        entrepreneuriat et gestion de projet ont également été des atouts pour réussir
-        dans le monde du développement web et mobile. Mes études d'arts m'ont
-        par ailleurs permis d'acquérir une grande sensibilité esthétique et une créativité
-        certaine, que je peux mobiliser à plusieurs étapes de réalisation de mes projets de développement.
+        J'ai d'abord réalisé des études en communication graphique et conception
+        artistique, avant d'apprendre en autodidacte (dans un premier temps) le
+        développement web et mobile. En explorant les différentes ressources
+        pédagogiques en ligne, j'ai acquis des compétences en code, langages et
+        technologies pour créer des applications web et mobiles performantes.
+        J'ai ensuite réalisé une formation de Développeur d'applications
+        android, qui m'a permis d'approndir mes connaissances. Mes formations en
+        entrepreneuriat et gestion de projet ont également été des atouts pour
+        réussir dans le monde du développement web et mobile. Mes études d'arts
+        m'ont par ailleurs permis d'acquérir une grande sensibilité esthétique
+        et une créativité certaine, que je peux mobiliser à plusieurs étapes de
+        réalisation de mes projets de développement.
       </p>
 
       <mat-tree [dataSource]="studiesDataSource" [treeControl]="treeControl">
@@ -106,24 +111,26 @@
       <mat-divider> </mat-divider>
     </div>
 
-    <div class="content-block passions">
+    <div class="content-block">
       <h2><mat-icon>self_improvement</mat-icon> mes passions</h2>
-      <p>
-        Le graphique ci-joint vous permettra de découvrir les différentes
-        activités que j'apprécie et qui occupent mon temps libre. Aujourd'hui,
-        grâce à la facilité d'accès à la connaissance, il est possible
-        d'apprendre tout ce que l'on souhaite. Ainsi, demain je pourrais tout
-        aussi bien me lancer dans l'apprentissage de la physique des corps noirs
-        dans l'espace ou des claquettes à la Savion Glover. En attendant, j'ai
-        choisi de me concentrer sur l'apprentissage de JAVA, de l'aquarelle et
-        du piano. Je suis animé par une curiosité sans limites et une
-        détermination à ne jamais laisser mon cerveau s'ennuyer.
-      </p>
+      <div class="passions">
+        <p>
+          Le graphique ci-joint vous permettra de découvrir les différentes
+          activités que j'apprécie et qui occupent mon temps libre. Aujourd'hui,
+          grâce à la facilité d'accès à la connaissance, il est possible
+          d'apprendre tout ce que l'on souhaite. Ainsi, demain je pourrais tout
+          aussi bien me lancer dans l'apprentissage de la physique des corps
+          noirs dans l'espace ou des claquettes à la Savion Glover. En
+          attendant, j'ai choisi de me concentrer sur l'apprentissage de JAVA,
+          de l'aquarelle et du piano. Je suis animé par une curiosité sans
+          limites et une détermination à ne jamais laisser mon cerveau
+          s'ennuyer.
+        </p>
 
-      <div id="divChart">
-        <canvas id="myChart"></canvas>
+        <div id="divChart">
+          <canvas id="myChart"></canvas>
+        </div>
       </div>
-
       <mat-divider> </mat-divider>
     </div>
 
