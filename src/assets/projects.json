@@ -132,9 +132,9 @@
   },
   {
     "id": 10,
-    "displayName": "Revient",
+    "displayName": "Reviens",
     "motivation": "PERSONAL",
-    "description": "Revient est un projet personnel que je développe depuis un certain temps, dans le but de m'améliorer dans le développement d'applications Android. Il est développé grâce à Android Studio et utilise les services de Firebase pour répondre à une problématique de la vie quotidienne. Il m'arrive souvent de prêter un objet à une personne et d'oublier à qui je l'ai prêté. Personne n'aime rappeler à quelqu'un qu'il doit rendre un objet qui lui a été prêté. C'est pourquoi cette application a été créée pour permettre aux utilisateurs de se connecter, d'ajouter des objets à leur collection, de les prêter à d'autres utilisateurs, d'être informés quand un objet doit être rendu prochainement, et de relancer la personne à qui l'objet a été prêté avec une notification. Bien sûr, Revient pourrait offrir bien d'autres fonctionnalités, mais l'application est encore en développement !",
+    "description": "Reviens est un projet personnel que je développe depuis un certain temps, dans le but de m'améliorer dans le développement d'applications Android. Il est développé grâce à Android Studio et utilise les services de Firebase pour répondre à une problématique de la vie quotidienne. Il m'arrive souvent de prêter un objet à une personne et d'oublier à qui je l'ai prêté. Personne n'aime rappeler à quelqu'un qu'il doit rendre un objet qui lui a été prêté. C'est pourquoi cette application a été créée pour permettre aux utilisateurs de se connecter, d'ajouter des objets à leur collection, de les prêter à d'autres utilisateurs, d'être informés quand un objet doit être rendu prochainement, et de relancer la personne à qui l'objet a été prêté avec une notification. Bien sûr, Reviens pourrait offrir bien d'autres fonctionnalités, mais l'application est encore en développement !",
     "imgUrl": "https://imgur.com/E6Hj855.jpg",
     "skillsId": [0,2,5],
     "screenshots": [

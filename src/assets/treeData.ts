@@ -21,7 +21,7 @@ export const EXP_TREE_DATA: TreeNode[] = [
     name: `2015 / Référent Art`,
     children: [
       {
-        name: `Enseignement de cours d’art aux enfants de 6 à 12 ans - Lille Université Club (LUC), Lille.`,
+        name: `Enseignement de cours d'art aux enfants de 6 à 12 ans - Lille Université Club (LUC), Lille.`,
       },
     ],
   },
@@ -83,7 +83,7 @@ export const STUDIES_TREE_DATA: TreeNode[] = [
   {
     name: `BAC PRO & CAP Communication Graphique et Visuelle`,
     children: [
-      { name: ` Lycée Pro Sainte Marie BAILLEUL (59) avec la mention A.B.` },
+      { name: ` Lycée Pro Sainte Marie BAILLEUL (59) avec la mention A.B.`},
     ],
   },
 ];
