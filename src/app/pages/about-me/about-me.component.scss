@@ -44,7 +44,7 @@
   mat-divider {
     margin-top: 1em;
   }
-  h2{
+  h2 {
     font-weight: 300;
     text-transform: uppercase;
     display: flex;
@@ -53,38 +53,68 @@
     gap: 0.5em;
   }
 }
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
-.contact-card-header-image{
+.contact-card-header-image {
   background-color: rgb(233, 162, 32);
   background-image: url(../../../assets/img/pierreG-100.png);
   background-size: cover;
   background-position: center;
 }
 
-.passions{
-display: flex;
-flex-direction: column;
-align-items: center;
+.passions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-
-#divChart{
+#divChart {
   padding: 1em 0;
   width: 350px;
   height: 350px;
 }
 
-@media (min-width: 768px){
-  #divChart{
+  .contact-card {
+    max-width: 100%;
+  }
+
+.eco-card {
+  background-color: rgb(94, 175, 61);
+  padding: 1em;
+  color: white;
+  min-width: 32em;
+  // flex-grow: 1;
+
+  .eco-card-header-image {
+    transform: scale(2);
+  }
+}
+
+
+
+@media (min-width: 768px) {
+  #divChart {
     min-width: 350px;
     min-height: 350px;
     max-width: 450px;
     max-height: 450px;
   }
 
-  .contact-card{
-    width: 32em;
+  .contact-card {
+    max-width: 32em;
   }
 
+  .eco-card{
+    max-width: 32em;
+  }
 
+  .footer{
+    flex-direction: row;
+  }
 }

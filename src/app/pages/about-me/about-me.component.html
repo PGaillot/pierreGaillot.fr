@@ -137,40 +137,61 @@
     <div class="content-block">
       <h2><mat-icon>alternate_email</mat-icon>contact</h2>
 
-      <mat-card class="contact-card">
-        <mat-card-header>
-          <div mat-card-avatar class="contact-card-header-image"></div>
+      <div class="footer">
+        <mat-card class="contact-card">
+          <mat-card-header>
+            <div mat-card-avatar class="contact-card-header-image"></div>
 
-          <mat-card-title>Pierre Gaillot</mat-card-title>
-          <mat-card-subtitle>développeur front end</mat-card-subtitle>
-        </mat-card-header>
-        <mat-card-content>
-          <p>
-            Pour plus d'information, ou simplement pour discuter vous pouvez me
-            contacter par téléphone ou par mail.
-          </p>
-          <ul>
-            <li>06.65.65.62.62</li>
-            <li>pr.gaillot@gmail.com</li>
-          </ul>
-        </mat-card-content>
-        <mat-card-actions>
-          <button
-            mat-button
-            (click)="
-              openLink('https://www.linkedin.com/in/pierre-gaillot-4a01b585/')
-            "
-          >
-            <mat-icon svgIcon="linkedin"></mat-icon>linkedin
-          </button>
-          <button
-            mat-button
-            (click)="openLink('https://www.instagram.com/piergaillot/')"
-          >
-            <mat-icon svgIcon="insta"></mat-icon>instagram
-          </button>
-        </mat-card-actions>
-      </mat-card>
+            <mat-card-title>Pierre Gaillot</mat-card-title>
+            <mat-card-subtitle>développeur front end</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content>
+            <p>
+              Pour plus d'information, ou simplement pour discuter vous pouvez
+              me contacter par téléphone ou par mail.
+            </p>
+            <ul>
+              <li>06.65.65.62.62</li>
+              <li>pr.gaillot@gmail.com</li>
+            </ul>
+          </mat-card-content>
+          <mat-card-actions>
+            <button
+              mat-button
+              (click)="
+                openLink('https://www.linkedin.com/in/pierre-gaillot-4a01b585/')
+              "
+            >
+              <mat-icon svgIcon="linkedin"></mat-icon>linkedin
+            </button>
+            <button
+              mat-button
+              (click)="openLink('https://www.instagram.com/piergaillot/')"
+            >
+              <mat-icon svgIcon="insta"></mat-icon>instagram
+            </button>
+          </mat-card-actions>
+        </mat-card>
+
+        <mat-card class="eco-card">
+          <mat-card-header>
+            <div mat-card-avatar><mat-icon class="eco-card-header-image">eco</mat-icon></div>
+            <mat-card-title>Eco conception</mat-card-title>
+            <mat-card-subtitle>Score : 79 / 100</mat-card-subtitle>
+          </mat-card-header>
+          <mat-card-content>
+            Je suis très sensible aux enjeux écologiques et à l'éco-conception. C'est pourquoi j'ai réalisé ce site web en suivant les principes de l'éco-conception, afin de minimiser son impact sur l'environnement. Je suis fier d'annoncer que le site a obtenu un score de 79/100 sur le site Eco Index, ce qui démontre mon engagement à créer des sites web durables et respectueux de l'environnement.
+          </mat-card-content>
+          <mat-card-actions>
+            <button
+              mat-stroked-button color="white"
+              (click)="openLink('https://www.ecoindex.fr/resultat/?id=b254b354-e039-4681-93e0-4ff353be2cc6')"
+            >
+              <mat-icon>eco</mat-icon>voir le resultat dans eco-index
+            </button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
     </div>
   </div>
 </body>
