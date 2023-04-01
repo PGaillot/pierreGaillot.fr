@@ -15,7 +15,17 @@
       "https://imgur.com/2Ai9hWi.jpg",
       "https://imgur.com/0L9d900.jpg"
     ],
-    "color": "#75B1DE"
+    "color": "#75B1DE",
+    "links":[
+      {
+        "name":"voir sur l'app store",
+        "link":"https://apps.apple.com/ci/app/sur-mesure/id1624893049"
+      },
+      {
+        "name":"voir sur le play store",
+        "link":"https://play.google.com/store/apps/datasafety?id=sur.mesure.app&hl=en_GB&gl=US"
+      }
+    ]
   },
 
   {
@@ -64,13 +74,19 @@
     "motivation": "PERSONAL",
     "description": "J'aime comprendre le fonctionnement des choses, et bien avant de me lancer dans le développement, je me suis souvent demandé comment fonctionnait un jeu vidéo. Qu'arrive-t-il réellement lorsque l'on ramasse un objet ou que l'on ouvre notre inventaire ? Ce sont des questions essentielles qui méritent des réponses. C'est pourquoi j'ai commencé par installer Unity, un moteur de jeu gratuit sur lequel de nombreux jeux de renom ont été développés, et j'ai commencé à coder de petites choses en C++. Au fil du temps, j'ai voulu créer mon propre petit jeu afin de mieux comprendre leur fonctionnement. Mon ambition n'était pas de sortir et de révolutionner le monde des jeux vidéo, mais plutôt de m'entraîner à mieux comprendre leur fonctionnement. Pour cela, j'ai eu besoin de plusieurs choses : un moteur de jeu (j'ai finalement opté pour Unreal Engine, qui était plus simple à prendre en main), un style de plateformer 2D en pixel, des assets pour gagner du temps sur les graphismes (mon personnage, ses animations, les objets qu'il ramasse), une histoire et un univers, de la musique, mais surtout de l'organisation. J'ai créé tous les éléments graphiques sur Photoshop, le code (après de multiples refontes) a été géré avec Unreal Engine, et les recherches et l'organisation sur Miro. Ce projet a été réalisé sur le long terme, mais grâce à mon acharnement, j'ai finalement réussi à faire ce que je voulais. Mon jeu raconte l'histoire d'un jeune Aztèque qui travaille comme testeur de pièges dans un temple.",
     "imgUrl": "./assets/img/projects/TTT.png",
+    "iconUrl":"https://imgur.com/hasy4ZU.gif",
     "skillsId": [8, 3, 9],
     "screenshots": [
+      "https://imgur.com/hasy4ZU.gif",
       "https://imgur.com/4xtsAFu.gif",
+      "https://imgur.com/Xdls59i.gif",
       "https://imgur.com/zx58sfV.gif",
+      "https://imgur.com/Vh14w7f.gif",
+      "https://imgur.com/NzwCIqI.gif",
       "https://imgur.com/jAPoNG3.gif",
       "https://imgur.com/HLM0p4m.gif",
-      "https://imgur.com/hasy4ZU.gif",
+      "https://imgur.com/UvASj5O.gif",
+      "https://imgur.com/3Unugv9.gif",
       "https://imgur.com/GLAHdOS.jpg"
     ]
   },
@@ -106,10 +122,11 @@
     "displayName": "Urabanesse AR",
     "motivation": "PROFESSIONAL",
     "description": "Le projet Urbanesse a été développé conjointement par Essteam et LevelUp Cluster. Urbanesse est un jeu de plateau où les habitants d'un quartier collaborent pour trouver la meilleure solution pour réhabiliter un lieu. Les joueurs placent des tuiles représentant des éléments de mobilier urbain sur le plateau de jeu. Au début du projet, j'étais impliqué en tant que graphiste et j'ai participé à la réalisation de certains visuels, y compris le logo. J'ai ensuite eu l'idée d'améliorer l'expérience de jeu en rendant le plateau de jeu plus interactif grâce à la réalité augmentée. L'idée était de faire apparaître en réalité augmentée des informations ainsi qu’un model 3d de l’élément vidée sur chaque élément de tuile. J'ai travaillé sur ce projet pendant quelques semaines et j'ai réussi à réaliser un prototype convaincant. Cependant, la qualité de la caméra des téléphones utilisés et la puissance de calcul limitaient la capacité à afficher suffisamment d'éléments sur le plateau de jeu simultanément.",
-    "imgUrl": "https://imgur.com/dIXywgP.jpg",
+    "imgUrl": "https://imgur.com/LFxNcLq.jpg",
     "skillsId": [8],
     "screenshots": [
       "https://imgur.com/dIXywgP.jpg",
+      "https://imgur.com/LFxNcLq.jpg",
       "https://imgur.com/wU2f2gn.jpg",
       "https://imgur.com/CdNPlaG.jpg",
       "https://imgur.com/eso5HuN.jpg",
