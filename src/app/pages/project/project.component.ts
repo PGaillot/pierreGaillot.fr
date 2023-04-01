@@ -126,4 +126,8 @@ export class ProjectComponent {
     }
     return mtv;
   }
+
+  goToLink(url: string){
+    window.open(url, "_blank");
+}
 }

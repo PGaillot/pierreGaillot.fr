@@ -25,11 +25,19 @@
     "description": "Avec des ami(e)s et des collègues, nous avons l'habitude de jouer au Sutom. Si vous ne connaissez pas le Sutom, c'est un jeu en ligne de type Motus dans lequel tout le monde doit découvrir un mot avec le moins d'essais possible, et chaque jour le mot change. Nous partageons souvent nos performances sur un canal Discord dédié où chacun clame haut et fort qu'il est le meilleur ! C'est là que m'est venue l'idée : si je crée un bot qui compte les scores de chacun, il pourrait nous dire qui est le meilleur chaque mois et qui a réalisé le meilleur score cette semaine. C'est ainsi qu'est né ce projet, et c'est exactement ce qu'il fait aujourd'hui, avec quelques fonctionnalités que je vous laisse découvrir. J'ai développé ce bot en Java, en utilisant l'API Java de Discord (JDA). La base de données a été développée par un ami en PHP avec Symfony.",
     "imgUrl": "https://i.notretemps.com/1800x0/smart/2019/10/28/thierry-beccaro-jai-choisi-le-sourire-et-la-vie.jpg",
     "gitUrl": "https://github.com/PierreGaillot/sutom-master",
-    "skillsId": [2, 5],
+    "iconUrl":"./assets/icons/sutom-master-icon.svg",
+    "skillsId": [2, 5, 1],
     "screenshots": [
       "https://imgur.com/XDg3s37.jpg",
       "https://imgur.com/MTjBWLV.jpg",
       "https://imgur.com/ipS9uk6.jpg"
+    ],
+    "color":"#F2BF3D",
+    "links":[
+      {
+        "name":"voir le Help sur notion",
+        "link":"https://www.notion.so/SutomHelp-d88fb109f35f4b84a4e101eaa6f90033?pvs=4"
+      }
     ]
   },
 
@@ -82,7 +90,7 @@
     "motivation": "PERSONAL",
     "description": "Comme vous avez peut-être pu le constater sur ce site, j'ai suivi des études dans les domaines de l'art, du graphisme et de la mise en page. Je suis passionné par la création et l'imagination, et j'aime concrétiser mes idées en les matérialisant. Cela commence souvent par la réalisation d'un croquis, d'un petit dessin ou même d'une aquarelle.",
     "imgUrl": "https://i.redd.it/3d46mrwwba901.png",
-    "skillsId": [3],
+    "skillsId": [3, 4],
     "screenshots": [
       "https://i.imgur.com/nz55WgO.png",
       "https://i.imgur.com/GoM7Y8U.png",

@@ -1,3 +1,4 @@
+import { ExternalLink } from "./externalLink";
 import { Skill } from "./skill";
 
 export class Project {
@@ -11,4 +12,5 @@ export class Project {
     skillsId?:number[];
     screenshots?:string[];
     color?:string;
+    links?:ExternalLink[];
 }
