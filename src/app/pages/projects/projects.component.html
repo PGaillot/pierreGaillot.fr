@@ -14,7 +14,7 @@
       <mat-chip-option
         *ngFor="let motivation of motivations"
         (click)="setChipSelected(motivation)"
-        >{{ motivation }}</mat-chip-option
+        >{{ getMotivationFrench(motivation) }}</mat-chip-option
       >
     </mat-chip-listbox>
     <mat-divider></mat-divider>

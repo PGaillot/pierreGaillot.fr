@@ -7,6 +7,7 @@ import { Skill } from 'src/app/models/skill';
 import lgZoom from 'lightgallery/plugins/zoom';
 import { ProjectService } from 'src/app/services/project.service';
 import { SkillService } from 'src/app/services/skill.service';
+import { MotivationType } from 'src/app/utils/motivationType';
 
 @Component({
   selector: 'app-project',
@@ -105,5 +106,24 @@ export class ProjectComponent {
 
   getDelaultImageName(project: Project) {
     return 'screenshot ' + project.displayName;
+  }
+
+  getMotivationFrench(motivation: string): string {
+    let mtv: string = '';
+    switch (motivation) {
+      case MotivationType.PERSONAL:
+        mtv = 'projet personnel';
+        break;
+      case MotivationType.PROFESSIONAL:
+        mtv = 'projet pro.';
+        break;
+      case MotivationType.FORMATION:
+        mtv = 'projet de formation';
+        break;
+      default:
+        mtv = 'autre motivation';
+        break;
+    }
+    return mtv;
   }
 }

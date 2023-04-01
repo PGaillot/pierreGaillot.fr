@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { Project } from 'src/app/models/project';
 import { ProjectService } from 'src/app/services/project.service';
+import { MotivationType } from 'src/app/utils/motivationType';
 
 @Component({
   selector: 'app-projects',
@@ -68,6 +69,25 @@ export class ProjectsComponent {
       }
     });
     this.projectsSelected = refreshList;
+  }
+
+  getMotivationFrench(motivation: string): string {
+    let mtv: string = '';
+    switch (motivation) {
+      case MotivationType.PERSONAL:
+        mtv = 'projet personnel';
+        break;
+      case MotivationType.PROFESSIONAL:
+        mtv = 'projet pro.';
+        break;
+      case MotivationType.FORMATION:
+        mtv = 'projet de formation';
+        break;
+      default:
+        mtv = 'autre motivation';
+        break;
+    }
+    return mtv;
   }
 
 }
