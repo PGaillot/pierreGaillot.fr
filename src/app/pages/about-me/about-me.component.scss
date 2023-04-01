@@ -52,7 +52,12 @@
     align-items: center;
     gap: 0.5em;
   }
+  p{
+    padding-bottom: 1em;
+  }
 }
+
+
 .footer {
   display: flex;
   flex-direction: column;

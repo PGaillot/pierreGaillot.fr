@@ -10,4 +10,5 @@ export class Project {
     description!:string;
     skillsId?:number[];
     screenshots?:string[];
+    color?:string;
 }

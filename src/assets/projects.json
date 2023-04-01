@@ -14,7 +14,8 @@
       "https://imgur.com/ilB2zul.jpg",
       "https://imgur.com/2Ai9hWi.jpg",
       "https://imgur.com/0L9d900.jpg"
-    ]
+    ],
+    "color": "#75B1DE"
   },
 
   {
@@ -23,13 +24,13 @@
     "motivation": "PERSONAL",
     "description": "Avec des ami(e)s et des collègues, nous avons l'habitude de jouer au Sutom. Si vous ne connaissez pas le Sutom, c'est un jeu en ligne de type Motus dans lequel tout le monde doit découvrir un mot avec le moins d'essais possible, et chaque jour le mot change. Nous partageons souvent nos performances sur un canal Discord dédié où chacun clame haut et fort qu'il est le meilleur ! C'est là que m'est venue l'idée : si je crée un bot qui compte les scores de chacun, il pourrait nous dire qui est le meilleur chaque mois et qui a réalisé le meilleur score cette semaine. C'est ainsi qu'est né ce projet, et c'est exactement ce qu'il fait aujourd'hui, avec quelques fonctionnalités que je vous laisse découvrir. J'ai développé ce bot en Java, en utilisant l'API Java de Discord (JDA). La base de données a été développée par un ami en PHP avec Symfony.",
     "imgUrl": "https://i.notretemps.com/1800x0/smart/2019/10/28/thierry-beccaro-jai-choisi-le-sourire-et-la-vie.jpg",
-    "gitUrl":"https://github.com/PierreGaillot/sutom-master",
+    "gitUrl": "https://github.com/PierreGaillot/sutom-master",
     "skillsId": [2, 5],
-    "screenshots":[
+    "screenshots": [
       "https://imgur.com/XDg3s37.jpg",
-      "https://imgur.com/MTjBWLV.jpg", 
+      "https://imgur.com/MTjBWLV.jpg",
       "https://imgur.com/ipS9uk6.jpg"
-  ]
+    ]
   },
 
   {
@@ -40,12 +41,13 @@
     "description": "Mediatio est un projet d'application mobile imaginé chez LevelUp Cluster. Son objectif est de mettre en relation des personnes éloignées du numérique avec des conseillers numériques proches d'eux, en utilisant un chat pour répondre à leurs questions et en leur proposant de participer à des ateliers. Par exemple, les aider à remplir leur déclaration d'impôt en ligne ou à envoyer un e-mail. J'ai réalisé toutes les maquettes et prototypes de ce projet sur Figma, ainsi que sa charte graphique.",
     "imgUrl": "./assets/img/projects/mediatio.png",
     "skillsId": [0],
-    "screenshots":[
-      "https://imgur.com/x0XotVF.jpg", 
-      "https://imgur.com/bayZKSl.jpg", 
-      "https://imgur.com/neTXoNo.jpg", 
-      "https://imgur.com/361Grz1.jpg" 
-  ]
+    "screenshots": [
+      "https://imgur.com/x0XotVF.jpg",
+      "https://imgur.com/bayZKSl.jpg",
+      "https://imgur.com/neTXoNo.jpg",
+      "https://imgur.com/361Grz1.jpg"
+    ],
+    "color": "#7B00FF"
   },
 
   {
@@ -55,14 +57,14 @@
     "description": "J'aime comprendre le fonctionnement des choses, et bien avant de me lancer dans le développement, je me suis souvent demandé comment fonctionnait un jeu vidéo. Qu'arrive-t-il réellement lorsque l'on ramasse un objet ou que l'on ouvre notre inventaire ? Ce sont des questions essentielles qui méritent des réponses. C'est pourquoi j'ai commencé par installer Unity, un moteur de jeu gratuit sur lequel de nombreux jeux de renom ont été développés, et j'ai commencé à coder de petites choses en C++. Au fil du temps, j'ai voulu créer mon propre petit jeu afin de mieux comprendre leur fonctionnement. Mon ambition n'était pas de sortir et de révolutionner le monde des jeux vidéo, mais plutôt de m'entraîner à mieux comprendre leur fonctionnement. Pour cela, j'ai eu besoin de plusieurs choses : un moteur de jeu (j'ai finalement opté pour Unreal Engine, qui était plus simple à prendre en main), un style de plateformer 2D en pixel, des assets pour gagner du temps sur les graphismes (mon personnage, ses animations, les objets qu'il ramasse), une histoire et un univers, de la musique, mais surtout de l'organisation. J'ai créé tous les éléments graphiques sur Photoshop, le code (après de multiples refontes) a été géré avec Unreal Engine, et les recherches et l'organisation sur Miro. Ce projet a été réalisé sur le long terme, mais grâce à mon acharnement, j'ai finalement réussi à faire ce que je voulais. Mon jeu raconte l'histoire d'un jeune Aztèque qui travaille comme testeur de pièges dans un temple.",
     "imgUrl": "./assets/img/projects/TTT.png",
     "skillsId": [8, 3, 9],
-    "screenshots":[
+    "screenshots": [
       "https://imgur.com/4xtsAFu.gif",
       "https://imgur.com/zx58sfV.gif",
       "https://imgur.com/jAPoNG3.gif",
       "https://imgur.com/HLM0p4m.gif",
       "https://imgur.com/hasy4ZU.gif",
       "https://imgur.com/GLAHdOS.jpg"
-  ]
+    ]
   },
 
   {
@@ -71,7 +73,8 @@
     "motivation": "FORMATION",
     "description": "Dans le cadre de ma formation de développeur d'applications Android, j'ai créé plusieurs applications pour m'exercer, dont Go4Lunch, qui est un excellent exemple de mon travail. L'objectif de cette application est de permettre aux employés d'une même entreprise de s'informer sur les lieux où ils peuvent déjeuner afin d'organiser leur temps de manière plus efficace.J'ai développé l'ensemble de l'application en utilisant le langage de programmation Java, ainsi que les API de Google, notamment Google Place et Google Maps. J'ai également utilisé les services de Firebase pour l'authentification des utilisateurs et le stockage des données.",
     "imgUrl": "https://i.imgur.com/HlOskof.png",
-    "skillsId": [2, 3, 9]
+    "skillsId": [2, 5, 3, 9],
+    "gitUrl": "https://github.com/PierreGaillot/Go4Lunch"
   },
   {
     "id": 6,
@@ -79,7 +82,7 @@
     "motivation": "PERSONAL",
     "description": "Comme vous avez peut-être pu le constater sur ce site, j'ai suivi des études dans les domaines de l'art, du graphisme et de la mise en page. Je suis passionné par la création et l'imagination, et j'aime concrétiser mes idées en les matérialisant. Cela commence souvent par la réalisation d'un croquis, d'un petit dessin ou même d'une aquarelle.",
     "imgUrl": "https://i.redd.it/3d46mrwwba901.png",
-    "skillsId":[3],
+    "skillsId": [3],
     "screenshots": [
       "https://i.imgur.com/nz55WgO.png",
       "https://i.imgur.com/GoM7Y8U.png",
@@ -112,10 +115,8 @@
     "motivation": "PERSONAL",
     "description": "J'ai souhaité refaire mon CV afin de mieux communiquer mes compétences en tant que développeur front-end. Pour ce faire, j'ai décidé de le refaire entièrement avec Angular, permettant ainsi une navigation rapide et simple vers les projets et compétences qui vous intéressent. Le code du CV est disponible sur GitHub.",
     "imgUrl": "https://imgur.com/WUwTtZQ.jpg",
-    "skillsId": [6,5],
-    "screenshots": [
-      "https://imgur.com/WUwTtZQ.jpg"
-    ]
+    "skillsId": [6, 5],
+    "screenshots": ["https://imgur.com/WUwTtZQ.jpg"]
   },
   {
     "id": 9,
@@ -123,7 +124,7 @@
     "motivation": "PROFESSIONAL",
     "description": "Le projet CSC 2.0 a pour objectif de simplifier l'accueil et la gestion des ateliers dans les centres sociaux connectés. Les adhérents peuvent se connecter avec une carte à une borne située dans le centre social et s'inscrire, ainsi que d'autres membres de leur foyer, aux activités prévues. L'application comprend un back-office pour l'administration permettant de gérer les inscriptions des utilisateurs et la gestion des ateliers. J'ai réalisé les maquettes et prototypes du projet en collaboration avec les centres sociaux, grâce à Figma. Ensuite, le développement du projet front-end a été réalisé avec Angular et Material Design, tandis qu'un collègue a développé la base de données en PHP avec Symfony.",
     "imgUrl": "https://imgur.com/QOJXddl.jpg",
-    "skillsId": [0,6,5],
+    "skillsId": [0, 6, 5],
     "screenshots": [
       "https://imgur.com/sZJS9Tz.jpg",
       "https://imgur.com/QOJXddl.jpg"
@@ -133,15 +134,27 @@
     "id": 10,
     "displayName": "Reviens",
     "motivation": "PERSONAL",
+    "iconUrl": "./assets/icons/reviens.svg",
     "description": "Reviens est un projet personnel que je développe depuis un certain temps, dans le but de m'améliorer dans le développement d'applications Android. Il est développé grâce à Android Studio et utilise les services de Firebase pour répondre à une problématique de la vie quotidienne. Il m'arrive souvent de prêter un objet à une personne et d'oublier à qui je l'ai prêté. Personne n'aime rappeler à quelqu'un qu'il doit rendre un objet qui lui a été prêté. C'est pourquoi cette application a été créée pour permettre aux utilisateurs de se connecter, d'ajouter des objets à leur collection, de les prêter à d'autres utilisateurs, d'être informés quand un objet doit être rendu prochainement, et de relancer la personne à qui l'objet a été prêté avec une notification. Bien sûr, Reviens pourrait offrir bien d'autres fonctionnalités, mais l'application est encore en développement !",
     "imgUrl": "https://imgur.com/E6Hj855.jpg",
-    "skillsId": [0,2,5],
+    "skillsId": [0, 2, 5],
     "screenshots": [
       "https://imgur.com/NmbN3jp.jpg",
-      "https://imgur.com/A0ID49E.jpg",      
+      "https://imgur.com/A0ID49E.jpg",
       "https://imgur.com/X14aZta.jpg",
       "https://imgur.com/Pgu76ik.jpg",
       "https://imgur.com/RnKOG0I.jpg"
-    ]
+    ],
+    "color": "#6929B2"
+  },
+  {
+    "id": 11,
+    "displayName": "PTEM",
+    "motivation": "PROFESSIONAL",
+    "iconUrl": "./assets/icons/ptem-icon.png",
+    "description": "Le projet Ptem, prends toi en main, sur lequel j'ai collaboré chez LevelUp cluster pour l'Association pour le Développement de l'Education Permanente (Adep-roubaix), vise à fournir une éducation populaire et permanente en permettant à tous d'accéder aux savoirs de base et à la culture. L'application permet aux apprenants de suivre leur progression dans un parcours défini avec leur mentor et de débloquer des cadeaux à chaque étape validée. J'ai travaillé en étroite collaboration avec le client sur la conception des maquettes et des prototypes. Nous avons décidé de créer une première version simplifiée pour définir l'architecture du projet. L'application est développée en TypeScript avec Ionic, tandis que les prototypes ont été réalisés sur Figma. Les graphismes ont été créés par un graphiste collègue, tandis que l'API et la base de données ont été développées en PHP avec Symfony par un autre collègue.",
+    "imgUrl": "https://imgur.com/5gM0sOp.jpg",
+    "skillsId": [0, 7, 5],
+    "screenshots": ["https://imgur.com/AtCrEue.jpg"]
   }
 ]
