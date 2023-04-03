@@ -6,7 +6,6 @@
     "motivation": "PROFESSIONAL",
     "description": "Sur Mesure est un projet d'application mobile ayant pour objectif de contacter des personnes éloignées de l'emploi et leur proposer des solutions adaptées à leurs besoins et problématiques, que ce soit pour reprendre un emploi ou suivre une formation. J'ai tout d'abord participé à la création de l'identité visuelle du projet, puis j'ai réalisé les premières maquettes de l'application. Étant curieux de savoir si celles-ci étaient réalisables et vu la simplicité du projet qui consistait en un simple questionnaire, j'ai décidé de m'immiscer dans le développement de l'application. Avec l'aide de mes collègues, j'ai pu réaliser la première version de Sur Mesure sur Android. J'ai utilisé les outils tels que Ionic, Firebase, Material Design et Lottie pour suivre toutes les étapes de développement, depuis le premier brief jusqu'à la mise en ligne sur le Play Store (et plus tard sur l'App Store).",
     "imgUrl": "./assets/img/projects/sur-mesure-mockup.png",
-    "gitUrl": "https://github.com/LevelUpCluster/sur-mesure-app",
     "skillsId": [0, 7, 5],
     "screenshots": [
       "https://imgur.com/0woSwUR.jpg",
@@ -171,7 +170,8 @@
       "https://imgur.com/Pgu76ik.jpg",
       "https://imgur.com/RnKOG0I.jpg"
     ],
-    "color": "#6929B2"
+    "color": "#6929B2",
+    "gitUrl":"https://github.com/PierreGaillot/Revient"
   },
   {
     "id": 11,
