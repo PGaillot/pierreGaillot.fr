@@ -1,83 +1,80 @@
 <body id="page">
-  <div id="header" class="header">
+  <div class="img-project-bg" [ngStyle]="{'background': ' center repeat url('+project.imgUrl+')'}">
+    <div class="bg-img">
+    
+    </div>
+    <div class="gradient"></div>
+  </div>
+
+  <div id="page-content">
     <img
       *ngIf="project.iconUrl != undefined"
       [src]="project.iconUrl"
       alt=""
-      [ngStyle]="{
-        background:
-          'radial-gradient(50% 50% at 50% 100%, ' +
-          project.color +
-          '50 10%,' +
-          project.color +
-          '00 100%)'
-      }"
     />
-    <div class="title-cont">
-      <h1>{{ project.displayName | uppercase }}</h1>
-      <p class="motivation">{{ getMotivationFrench(project.motivation) }}</p>
+    <div class="project-header" [ngClass]="{'no-icon': project.iconUrl == undefined}">
+      <div class="title-cont">
+        <h1>{{ project.displayName | uppercase }}</h1>
+        <p class="motivation">{{ getMotivationFrench(project.motivation) }}</p>
+      </div>
     </div>
-  </div>
-  <div class="cont">
-    <div class="desc">
-      <h2>{{ project.displayName | titlecase }} qu'est ce que c'est ?</h2>
-      <p>{{ project.description }}</p>
+    <div class="cont">
+      <div class="desc">
+        <h2>{{ project.displayName | titlecase }} qu'est ce que c'est ?</h2>
+        <p>{{ project.description }}</p>
 
-      <div class="links" *ngIf="project.links != undefined">
-
+        <div class="links" *ngIf="project.links != undefined"></div>
       </div>
 
-    </div>
-
-    <div class="skills-category-cont" *ngIf="skillsCategory.length > 0">
-      <div class="skill-cont" *ngFor="let category of skillsCategory">
-        <mat-chip
-          (click)="onChipClick(skill)"
-          *ngFor="let skill of getSkillByCategory(category)"
-          >{{ skill.displayName }}</mat-chip
-        >
+      <div class="skills-category-cont" *ngIf="skillsCategory.length > 0">
+        <div class="skill-cont" *ngFor="let category of skillsCategory">
+          <mat-chip
+            (click)="onChipClick(skill)"
+            *ngFor="let skill of getSkillByCategory(category)"
+            >{{ skill.displayName }}</mat-chip
+          >
+        </div>
+        <div class="more-info"></div>
       </div>
-      <div class="more-info"></div>
-      
+
+      <button
+        mat-flat-button
+        *ngFor="let link of project.links"
+        (click)="goToLink(link.link)"
+      >
+        {{ link.name }}
+      </button>
+
+      <div
+        class="project-screenshots-cont"
+        *ngIf="project.screenshots != undefined"
+      >
+        <h2>{{ project.displayName }} en images :</h2>
+
+        <lightgallery [settings]="settings" [onBeforeSlide]="onBeforeSlide">
+          <a
+            *ngFor="let screenshot of project.screenshots; let index = index"
+            [href]="screenshot"
+          >
+            <img
+              [alt]="project.displayName + ' image ' + (index + 1)"
+              [src]="getImgurThumbnails(screenshot)"
+            />
+          </a>
+        </lightgallery>
+      </div>
+
+      <button
+        mat-button
+        [disabled]="project.gitUrl === undefined"
+        *ngIf="github"
+        (click)="onGitClick()"
+      >
+        voir le repo github
+      </button>
+      <button mat-button routerLink="/projects">
+        <mat-icon>arrow_back</mat-icon> retour aux projects
+      </button>
     </div>
-
-        <button
-          mat-flat-button
-          *ngFor="let link of project.links"
-          (click)="goToLink(link.link)"
-        >
-          {{ link.name }}
-        </button>
-
-    <div
-      class="project-screenshots-cont"
-      *ngIf="project.screenshots != undefined"
-    >
-      <h2>{{ project.displayName }} en images :</h2>
-
-      <lightgallery [settings]="settings" [onBeforeSlide]="onBeforeSlide">
-        <a
-          *ngFor="let screenshot of project.screenshots; let index = index"
-          [href]="screenshot"
-        >
-          <img
-            [alt]="project.displayName + ' image ' + (index + 1)"
-            [src]="getImgurThumbnails(screenshot)"
-          />
-        </a>
-      </lightgallery>
-    </div>
-
-    <button
-      mat-button
-      [disabled]="project.gitUrl === undefined"
-      *ngIf="github"
-      (click)="onGitClick()"
-    >
-      voir le repo github
-    </button>
-    <button mat-button routerLink="/projects">
-      <mat-icon>arrow_back</mat-icon> retour aux projects
-    </button>
   </div>
 </body>
