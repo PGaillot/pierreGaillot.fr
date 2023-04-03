@@ -47,6 +47,10 @@ export class AboutMeComponent {
     window.open(link)
   }
 
+  openPaperCv(){
+    window.open("/assets/paper-cv_compressed.pdf")
+  }
+
   ngOnInit(): void {
     var myChart = new Chart('myChart', {
       type: 'doughnut',
