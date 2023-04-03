@@ -15,6 +15,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     align-items: stretch;
 }
 
+.bold{
+    font-weight: 500;
+}
+
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
     #page{
         padding: 2em 4em;
